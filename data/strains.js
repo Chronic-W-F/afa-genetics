@@ -696,7 +696,7 @@ const strains = {
   time: "75-80 days"
 },
 {
-  name: "N.F.S.O.T.",
+  name: "NFSOT Runtz",
   type: "Auto Fem",
   lineage: "El Frost Monster x Supreme Runts x Kushmints",
   dominance: "Indica leaning hybrid",
@@ -704,16 +704,6 @@ const strains = {
   flavor: "Sweet berry, cool mint, skunky earthy finish",
   effects: "Relaxing high, subtle euphoric buzz",
   time: "75-80 days"
-},
-{
-  name: "Runts",
-  type: "Auto Fem",
-  lineage: "Sour Black Cherry Haze x Bipolar Bissell",
-  dominance: "Sativa leaning hybrid",
-  terpenes: "Pinene, Myrcene, Caryophyllene",
-  flavor: "Sweet cherry, zesty lemon, skunky earthy finish",
-  effects: "Uplifting high, relaxing edge",
-  time: "85-90 days"
 },
 {
   name: "Hazy Bissell",
