@@ -1,110 +1,265 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AFA Genetics</title>  <style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AFA Genetics</title>
+
+  <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: black;
-      color: white;
+      background: #000;
+      color: #fff;
       text-align: center;
+    }
+
+    header {
+      padding: 30px 16px 15px;
     }
 
     h1 {
       color: #39ff14;
-      text-shadow: 0 0 10px #39ff14;
-      margin-top: 20px;
+      font-size: 2.6rem;
+      margin: 0;
+      text-shadow: 0 0 14px #39ff14;
+    }
+
+    .tagline {
+      color: #ccc;
+      margin-top: 8px;
+      font-size: 1rem;
+    }
+
+    .nav {
+      padding: 12px;
+      position: sticky;
+      top: 0;
+      background: #000;
+      z-index: 10;
+      border-bottom: 1px solid #143b14;
+    }
+
+    .nav a {
+      display: inline-block;
+      color: #fff;
+      border: 1px solid #39ff14;
+      border-radius: 999px;
+      padding: 9px 13px;
+      margin: 5px;
+      text-decoration: none;
+      box-shadow: 0 0 8px #39ff14;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 22px 14px;
     }
 
     h2 {
       color: #39ff14;
-      margin-top: 40px;
+      font-size: 2rem;
+      margin: 20px 0;
+      text-shadow: 0 0 10px #39ff14;
     }
 
-    .section {
-      padding: 20px;
-    }
-
-    .card {
-      border: 2px solid #39ff14;
-      border-radius: 12px;
-      padding: 15px;
-      margin: 15px;
-      box-shadow: 0 0 10px #39ff14;
-    }
-
-    .price-box {
-      margin-top: 20px;
-      font-size: 18px;
-      color: #39ff14;
+    .notice {
+      max-width: 720px;
+      margin: 18px auto;
+      padding: 16px;
       border: 2px dashed #39ff14;
-      padding: 15px;
-      border-radius: 10px;
-      width: 80%;
-      margin-left: auto;
-      margin-right: auto;
+      border-radius: 16px;
+      color: #39ff14;
+      background: #050505;
     }
 
-    .button {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 20px;
-      border-radius: 25px;
+    .strain-card {
+      max-width: 720px;
+      margin: 14px auto;
+      border: 2px solid #39ff14;
+      border-radius: 18px;
+      background: #050505;
+      box-shadow: 0 0 12px #39ff14;
+      overflow: hidden;
+      text-align: left;
+    }
+
+    .strain-button {
+      width: 100%;
+      border: 0;
+      background: transparent;
+      color: #fff;
+      padding: 18px;
+      font-size: 1.15rem;
+      font-weight: bold;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .strain-button span {
+      color: #39ff14;
+      float: right;
+    }
+
+    .strain-details {
+      display: none;
+      padding: 0 18px 18px;
+      color: #ddd;
+      line-height: 1.45;
+      border-top: 1px solid #145214;
+    }
+
+    .strain-details p {
+      margin: 9px 0;
+    }
+
+    .label {
+      color: #39ff14;
+      font-weight: bold;
+    }
+
+    .order-card {
+      max-width: 720px;
+      margin: 14px auto;
+      padding: 18px;
+      border: 2px solid #39ff14;
+      border-radius: 18px;
+      background: #050505;
+      box-shadow: 0 0 12px #39ff14;
+      line-height: 1.5;
+    }
+
+    .pay-link {
+      display: block;
+      max-width: 320px;
+      margin: 14px auto;
+      padding: 15px;
+      border-radius: 999px;
       border: 2px solid #39ff14;
       color: white;
       text-decoration: none;
-      box-shadow: 0 0 10px #39ff14;
+      font-weight: bold;
+      box-shadow: 0 0 12px #39ff14;
     }
 
     .email-btn {
       display: block;
-      margin: 20px auto;
+      max-width: 320px;
+      margin: 18px auto;
       padding: 15px;
-      width: 80%;
-      max-width: 300px;
       background: #39ff14;
       color: black;
-      border-radius: 10px;
+      border-radius: 12px;
       font-weight: bold;
       text-decoration: none;
     }
 
-  </style></head><body><h1>AFA Genetics</h1><div class="section">  <div class="price-box">
-    💰 Pricing Coming Soon<br/>
-    📦 Pack deals and promos will be listed here
-  </div></div><div class="section">
-  <h2>🔥 Featured Strains</h2>  <div class="card">
-    <b>Frosted Terps F3</b><br/>
-    Frosty citrus gas — easy grow, high yield
-  </div>  <div class="card">
-    <b>Fa-Kawi Sour</b><br/>
-    Pure Sour Diesel stacking — gas monster
-  </div>  <div class="card">
-    <b>Hunch Punch F3</b><br/>
-    Blackberry jam + skunky gas
-  </div></div><div class="section">
-  <h2>🍪 Dessert / Cookie</h2>  <div class="card">Glazed Oreos</div>
-  <div class="card">Biscotti Crunch</div>
-  <div class="card">Cookie Dough</div></div><div class="section">
-  <h2>🍬 Fruit / Candy</h2>  <div class="card">Gummy Blast</div>
-  <div class="card">Island Breeze</div>
-  <div class="card">Cosmic Crunch</div></div><div class="section">
-  <h2>⛽ Sour / Gas</h2>  <div class="card">Fa-Kawi Sour</div>
-  <div class="card">Sour Trix</div>
-  <div class="card">Santa’s Sour</div></div><div class="section">
-  <h2>🌙 Heavy Indica</h2>  <div class="card">Frostbite</div>
-  <div class="card">Skunky Chicken</div>
-  <div class="card">Arabian Nights</div></div><div class="section">
-  <h2>⚡ Fast Flower (Limited)</h2>  <div class="card">Watermelon Donkey Deez</div>
-  <div class="card">Super Jealous</div>
-  <div class="card">Jealous Zombie</div>
-</div><div class="section">
-  <h2>📦 How To Order</h2>  <p>
-    1. Choose your strains<br/>
-    2. Send payment (CashApp / Venmo / PayPal)<br/>
-    3. Email your order details
-  </p>  <a class="email-btn" href="mailto:cwormg@gmail.com">
-    📧 EMAIL ORDER
-  </a></div></body>
+    footer {
+      color: #74ff74;
+      padding: 32px 12px;
+      border-top: 1px solid #143b14;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>AFA Genetics</h1>
+    <div class="tagline">Auto / Fem seed catalog • Fast Flowering section • Simple order flow</div>
+  </header>
+
+  <nav class="nav">
+    <a href="#autoFem">Auto / Fem</a>
+    <a href="#order">Order</a>
+  </nav>
+
+  <section>
+    <div class="notice">
+      Pricing coming soon. Pack deals and promos will be listed here.
+    </div>
+  </section>
+
+  <section id="autoFem">
+    <h2>Auto / Fem</h2>
+    <div id="autoFemList"></div>
+  </section>
+
+  <section id="order">
+    <h2>How To Order</h2>
+
+    <div class="order-card">
+      Send payment via Cash App or Venmo, then email your order with:
+      <br><br>
+      Strain names<br>
+      Quantity<br>
+      Shipping info
+    </div>
+
+    <a class="pay-link" href="https://cash.app/$ChuckGermond" target="_blank" rel="noopener">
+      Cash App: $ChuckGermond
+    </a>
+
+    <a class="pay-link" href="https://venmo.com/charles-Germond-1" target="_blank" rel="noopener">
+      Venmo: @charles-Germond-1
+    </a>
+
+    <a class="email-btn" href="mailto:REPLACE-WITH-CHUCK-EMAIL?subject=AFA Genetics Order&body=Strain Name(s):%0AQuantity:%0AShipping Info:%0A">
+      Email Order
+    </a>
+  </section>
+
+  <footer>
+    AFA Genetics<br>
+    Collector / novelty seed catalog
+  </footer>
+
+  <script type="module">
+    import strains from "./data/strains.js";
+
+    const autoFemList = document.getElementById("autoFemList");
+
+    function field(label, value) {
+      if (!value) return "";
+      return `<p><span class="label">${label}:</span> ${value}</p>`;
+    }
+
+    function renderStrain(strain, index) {
+      return `
+        <div class="strain-card">
+          <button class="strain-button" data-index="${index}">
+            ${strain.name}
+            <span>+</span>
+          </button>
+          <div class="strain-details">
+            ${field("Type", strain.type || "Auto Fem")}
+            ${field("Lineage", strain.lineage)}
+            ${field("Dominance", strain.dominance)}
+            ${field("THC", strain.thc)}
+            ${field("Ease", strain.ease)}
+            ${field("Yield", strain.yield)}
+            ${field("Flower Time", strain.time)}
+            ${field("Terpenes", strain.terpenes)}
+            ${field("Flavor", strain.flavor)}
+            ${field("Effects", strain.effects)}
+            ${field("Note", strain.note)}
+          </div>
+        </div>
+      `;
+    }
+
+    autoFemList.innerHTML = strains.autoFem
+      .map((strain, index) => renderStrain(strain, index))
+      .join("");
+
+    document.querySelectorAll(".strain-button").forEach((button) => {
+      button.addEventListener("click", () => {
+        const details = button.nextElementSibling;
+        const icon = button.querySelector("span");
+        const open = details.style.display === "block";
+        details.style.display = open ? "none" : "block";
+        icon.textContent = open ? "+" : "−";
+      });
+    });
+  </script>
+</body>
 </html>
