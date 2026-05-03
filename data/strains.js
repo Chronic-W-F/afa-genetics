@@ -575,8 +575,7 @@ const strains = {
   effects: "Euphoric head high with mellow body",
   time: "75-80 days"
 }
-    ]
-};
+
 ],
 
   fastFlower: [
