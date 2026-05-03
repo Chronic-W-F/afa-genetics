@@ -577,5 +577,36 @@ const strains = {
 }
     ]
 };
+],
 
+  fastFlower: [
+    {
+      name: "Watermelon Donkey Deez",
+      type: "Fast Flower",
+      lineage: "Cereal Milk x Jealousy x Sour Jealousy",
+      flavor: "Watermelon, creamy cereal, diesel",
+      time: "5.5–7 weeks"
+    },
+    {
+      name: "Super Jealous",
+      type: "Fast Flower",
+      lineage: "Super Boof x Sour Jealousy x Jealousy",
+      flavor: "Sweet berry, citrus, gas",
+      time: "5.5–7 weeks"
+    },
+    {
+      name: "Jealous Zombie",
+      type: "Fast Flower",
+      lineage: "Sour Jealousy x Jealousy x Zombie Death Fuck",
+      flavor: "Mint cookie, diesel funk",
+      time: "5.5–7 weeks"
+    },
+    {
+      name: "Smell My Fingerz",
+      type: "Fast Flower",
+      lineage: "Hollywood Roadkill x Monkey Breath",
+      flavor: "Skunk, garlic, kush",
+      time: "5.5–7 weeks"
+    }
+  ]
 export default strains;
