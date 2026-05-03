@@ -168,7 +168,7 @@
     <a href="#order">Order</a>
   </nav>
 
-  <!-- PRICING SECTION -->
+  <!-- PRICING -->
   <section id="pricing">
     <h2>Pricing</h2>
 
@@ -206,15 +206,15 @@
       Shipping info
     </div>
 
-    <a class="pay-link" href="https://cash.app/$ChuckGermond" target="_blank" rel="noopener">
+    <a class="pay-link" href="https://cash.app/$ChuckGermond" target="_blank">
       Cash App: $ChuckGermond
     </a>
 
-    <a class="pay-link" href="https://venmo.com/charles-Germond-1" target="_blank" rel="noopener">
+    <a class="pay-link" href="https://venmo.com/charles-Germond-1" target="_blank">
       Venmo: @charles-Germond-1
     </a>
 
-    <a class="email-btn" href="mailto:REPLACE-WITH-CHUCK-EMAIL?subject=AFA Genetics Order&body=Strain Name(s):%0AQuantity:%0AShipping Info:%0A">
+    <a class="email-btn" href="mailto:bookingchuckeg@gmail.com?subject=AFA Genetics Order&body=Strain Name(s):%0A%0AQuantity:%0A%0AShipping Info:%0A">
       Email Order
     </a>
   </section>
@@ -259,13 +259,8 @@
       `;
     }
 
-    autoFemList.innerHTML = (strains.autoFem || [])
-      .map(renderStrain)
-      .join("");
-
-    fastFlowerList.innerHTML = (strains.fastFlower || [])
-      .map(renderStrain)
-      .join("");
+    autoFemList.innerHTML = (strains.autoFem || []).map(renderStrain).join("");
+    fastFlowerList.innerHTML = (strains.fastFlower || []).map(renderStrain).join("");
 
     document.querySelectorAll(".strain-button").forEach((button) => {
       button.addEventListener("click", () => {
