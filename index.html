@@ -6,6 +6,8 @@
   <title>AFA Genetics</title>
 
   <style>
+    html { scroll-behavior: smooth; }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -50,6 +52,7 @@
       text-decoration: none;
       box-shadow: 0 0 8px #39ff14;
       font-weight: bold;
+      font-size: 0.9rem;
     }
 
     section {
@@ -170,6 +173,7 @@
 
   <nav class="nav">
     <a href="#autoFem">Auto / Fem</a>
+    <a href="#fastFlower">Fast Flower</a>
     <a href="#order">Order</a>
   </nav>
 
@@ -182,6 +186,11 @@
   <section id="autoFem">
     <h2>Auto / Fem</h2>
     <div id="autoFemList"></div>
+  </section>
+
+  <section id="fastFlower">
+    <h2>⚡ Fast Flowering</h2>
+    <div id="fastFlowerList"></div>
   </section>
 
   <section id="order">
@@ -217,16 +226,17 @@
     import strains from "./data/strains.js";
 
     const autoFemList = document.getElementById("autoFemList");
+    const fastFlowerList = document.getElementById("fastFlowerList");
 
     function field(label, value) {
       if (!value) return "";
       return `<p><span class="label">${label}:</span> ${value}</p>`;
     }
 
-    function renderStrain(strain, index) {
+    function renderStrain(strain) {
       return `
         <div class="strain-card">
-          <button class="strain-button" data-index="${index}">
+          <button class="strain-button">
             ${strain.name}
             <span>+</span>
           </button>
@@ -247,8 +257,12 @@
       `;
     }
 
-    autoFemList.innerHTML = strains.autoFem
-      .map((strain, index) => renderStrain(strain, index))
+    autoFemList.innerHTML = (strains.autoFem || [])
+      .map(renderStrain)
+      .join("");
+
+    fastFlowerList.innerHTML = (strains.fastFlower || [])
+      .map(renderStrain)
       .join("");
 
     document.querySelectorAll(".strain-button").forEach((button) => {
@@ -256,6 +270,7 @@
         const details = button.nextElementSibling;
         const icon = button.querySelector("span");
         const open = details.style.display === "block";
+
         details.style.display = open ? "none" : "block";
         icon.textContent = open ? "+" : "−";
       });
