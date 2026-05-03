@@ -95,6 +95,24 @@
       font-size: 0.95rem;
     }
 
+    .number-toggle-btn {
+      display: inline-block;
+      color: #000;
+      border: 1px solid #39ff14;
+      border-radius: 999px;
+      padding: 9px 13px;
+      margin: 10px 5px 0;
+      font-weight: bold;
+      font-size: 0.9rem;
+      background: #39ff14;
+      cursor: pointer;
+      box-shadow: 0 0 8px #39ff14;
+    }
+
+    .hide-numbers .strain-number {
+      display: none;
+    }
+
     .strain-card {
       max-width: 720px;
       margin: 14px auto;
@@ -118,9 +136,9 @@
       cursor: pointer;
     }
 
-    .strain-button span {
-      color: #39ff14;
+    .strain-button span:last-child {
       float: right;
+      color: #39ff14;
     }
 
     .strain-details {
@@ -192,6 +210,7 @@
       <input id="searchInput" type="text" placeholder="Search anything: F3, garlic, diesel, berry..." />
       <div id="letterFilters"></div>
       <button class="clear-btn" id="clearFilters">Clear Search</button>
+      <button class="number-toggle-btn" id="toggleNumbers">Hide Numbers</button>
       <div class="result-count" id="resultCount"></div>
     </div>
   </section>
@@ -257,6 +276,7 @@
     const letterFilters = document.getElementById("letterFilters");
     const clearFilters = document.getElementById("clearFilters");
     const resultCount = document.getElementById("resultCount");
+    const toggleNumbers = document.getElementById("toggleNumbers");
 
     let activeLetter = "All";
 
@@ -271,11 +291,11 @@
       return `<p><span class="label">${label}:</span> ${value}</p>`;
     }
 
-    function renderStrain(strain) {
+    function renderStrain(strain, index) {
       return `
         <div class="strain-card">
           <button class="strain-button">
-            ${strain.name}
+            <span class="strain-number">${index + 1}. </span>${strain.name}
             <span>+</span>
           </button>
           <div class="strain-details">
@@ -326,7 +346,7 @@
       document.querySelectorAll(".strain-button").forEach((button) => {
         button.addEventListener("click", () => {
           const details = button.nextElementSibling;
-          const icon = button.querySelector("span");
+          const icon = button.querySelector("span:last-child");
           const open = details.style.display === "block";
 
           details.style.display = open ? "none" : "block";
@@ -345,8 +365,8 @@
       const filteredAuto = filterList(strains.autoFem || []);
       const filteredFast = filterList(strains.fastFlower || []);
 
-      autoFemList.innerHTML = filteredAuto.map(renderStrain).join("");
-      fastFlowerList.innerHTML = filteredFast.map(renderStrain).join("");
+      autoFemList.innerHTML = filteredAuto.map((s, i) => renderStrain(s, i)).join("");
+      fastFlowerList.innerHTML = filteredFast.map((s, i) => renderStrain(s, i)).join("");
 
       const total = filteredAuto.length + filteredFast.length;
       resultCount.textContent = `Showing ${total} result${total === 1 ? "" : "s"}`;
@@ -370,6 +390,14 @@
       searchInput.value = "";
       activeLetter = "All";
       renderAll();
+    });
+
+    toggleNumbers.addEventListener("click", () => {
+      document.body.classList.toggle("hide-numbers");
+
+      toggleNumbers.textContent = document.body.classList.contains("hide-numbers")
+        ? "Show Numbers"
+        : "Hide Numbers";
     });
 
     renderAll();
