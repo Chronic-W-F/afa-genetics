@@ -608,4 +608,5 @@ const strains = {
       time: "5.5–7 weeks"
     }
   ]
+};
 export default strains;
