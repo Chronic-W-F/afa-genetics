@@ -574,11 +574,579 @@ const strains = {
   flavor: "Sweet cookie dough, icy mint, creamy finish",
   effects: "Euphoric head high with mellow body",
   time: "75-80 days"
-}
-
-],
-
-  fastFlower: [
+},
+  {
+  name: "Super OG",
+  type: "Auto Fem",
+  lineage: "Jogi OG x Super Garlic x Blueberry",
+  dominance: "Full Indica",
+  terpenes: "Myrcene, Caryophyllene, Limonene",
+  flavor: "Juicy blueberry, bold garlic, earthy skunky finish",
+  effects: "Heavy relaxing high, mild euphoric lift",
+  time: "70-80 days"
+},
+{
+  name: "Jogi Diamonds",
+  type: "Auto Fem",
+  lineage: "Jogi OG x Diamond Milk x Final Boss",
+  dominance: "Full Indica",
+  terpenes: "Myrcene, Caryophyllene, Limonene",
+  flavor: "Sweet cream, pungent OG, skunky earthy finish",
+  effects: "Heavy relaxing high, mild euphoric lift",
+  time: "70-80 days"
+},
+{
+  name: "Bipolar Bissell",
+  type: "Auto Fem",
+  lineage: "Jogi OG x Pappy Secret Haze",
+  dominance: "Indica leaning hybrid",
+  terpenes: "Limonene, Myrcene, Caryophyllene",
+  flavor: "Zesty lemon, skunky haze, creamy spicy finish",
+  effects: "Relaxing high, subtle uplifting buzz",
+  time: "75-80 days"
+},
+{
+  name: "Kamikaze",
+  type: "Auto Fem",
+  lineage: "Garlic Slushy F3 x Jogi OG",
+  dominance: "Full Indica",
+  terpenes: "Caryophyllene, Myrcene, Limonene",
+  flavor: "Bold garlic, zesty lemon, skunky earthy finish",
+  effects: "Heavy relaxing high, mild euphoric kick",
+  time: "70-80 days"
+},
+{
+  name: "Show Me Garlic",
+  type: "Auto Fem",
+  lineage: "Jogi OG x Show Me OG x Cushman’s",
+  dominance: "Indica leaning hybrid",
+  terpenes: "Myrcene, Caryophyllene, Limonene",
+  flavor: "Bold garlic, skunky OG, peppery finish",
+  effects: "Relaxing high, mild euphoric lift",
+  time: "75-80 days"
+},
+{
+  name: "Rickie Bobbie",
+  type: "Auto Fem",
+  lineage: "Jogi OG x Sweet Burnout",
+  dominance: "Indica leaning hybrid",
+  terpenes: "Myrcene, Limonene, Caryophyllene",
+  flavor: "Burnt rubber, zesty lemon, sweet earthy finish",
+  effects: "Relaxing high, subtle euphoric buzz",
+  time: "75-80 days"
+},
+{
+  name: "Pappy’s Breath",
+  type: "Auto Fem",
+  lineage: "Garlic Pappy’s x Mexican Airlines x Coal Miner’s Daughter",
+  dominance: "Full Indica",
+  terpenes: "Caryophyllene, Myrcene, Limonene",
+  flavor: "Bold garlic, herbal zest, skunky earthy finish",
+  effects: "Heavy relaxing high, subtle uplifting kick",
+  time: "70-80 days"
+},
+{
+  name: "Knockout OG",
+  type: "Auto Fem",
+  lineage: "Jogi OG x Garlic Fist",
+  dominance: "Full Indica",
+  terpenes: "Myrcene, Caryophyllene, Limonene",
+  flavor: "Pungent garlic, spicy OG, skunky earthy finish",
+  effects: "Heavy relaxing high, mild euphoric lift",
+  time: "70-80 days"
+},
+{
+  name: "Creamy Garlic",
+  type: "Auto Fem",
+  lineage: "Garlic Milk x Jogi OGF2",
+  dominance: "Full Indica",
+  terpenes: "Myrcene, Caryophyllene, Limonene",
+  flavor: "Smooth cream, bold garlic, skunky earthy finish",
+  effects: "Heavy relaxing high, subtle euphoric kick",
+  time: "70-80 days"
+},
+{
+  name: "Garlic Breath",
+  type: "Auto Fem",
+  lineage: "Garlicy Mac x Jogi OGF2 x GMO",
+  dominance: "Full Indica",
+  terpenes: "Myrcene, Caryophyllene, Limonene",
+  flavor: "Bold garlic, creamy OG, funky earthy finish",
+  effects: "Heavy relaxing high, mild euphoric lift",
+  time: "70-80 days"
+},
+{
+  name: "Jogi 51",
+  type: "Auto Fem",
+  lineage: "Jogi OG x Project 51 x The Finisher",
+  dominance: "Indica leaning hybrid",
+  terpenes: "Myrcene, Caryophyllene, Limonene",
+  flavor: "Pungent OG, zesty lemon, skunky herbal finish",
+  effects: "Relaxing high, subtle euphoric lift",
+  time: "75-80 days"
+},
+{
+  name: "The Finisher",
+  type: "Auto Fem",
+  lineage: "Jogi G Diamonds x Final Boss x Alien OG",
+  dominance: "Indica leaning hybrid",
+  terpenes: "Myrcene, Limonene, Caryophyllene",
+  flavor: "Zesty lemon, pungent OG, earthy gassy finish",
+  effects: "Relaxing high, mild euphoric buzz",
+  time: "75-80 days"
+},
+{
+  name: "Iced Out",
+  type: "Auto Fem",
+  lineage: "Jogi G Diamonds x Greasetown Monkey x Neon Gummies",
+  dominance: "Indica leaning hybrid",
+  terpenes: "Limonene, Myrcene, Caryophyllene",
+  flavor: "Zesty lemon, sweet gummy candy, skunky earthy finish",
+  effects: "Relaxing high, subtle euphoric lift",
+  time: "75-80 days"
+},
+{
+  name: "Slurri Sundae",
+  type: "Auto Fem",
+  lineage: "Jogi G Diamonds x Grape Slurri x Sundae Driver",
+  dominance: "Indica leaning hybrid",
+  terpenes: "Myrcene, Limonene, Caryophyllene",
+  flavor: "Juicy grape, zesty lemon, smooth earthy finish",
+  effects: "Relaxing high, mild euphoric lift",
+  time: "75-80 days"
+},
+{
+  name: "Pop Rocks",
+  type: "Auto Fem",
+  lineage: "Jogi G Diamonds x Supreme Runts x Moonshine Cookies",
+  dominance: "Indica leaning hybrid",
+  terpenes: "Limonene, Myrcene, Caryophyllene",
+  flavor: "Fizzy candy, zesty lemon, creamy earthy finish",
+  effects: "Relaxing high, subtle euphoric buzz",
+  time: "75-80 days"
+},
+{
+  name: "Luke Sky Monster",
+  type: "Auto Fem",
+  lineage: "El Frost Monster x Skywalker OG x Kushmints",
+  dominance: "Indica leaning hybrid",
+  terpenes: "Myrcene, Caryophyllene, Limonene",
+  flavor: "Cool pine, minty OG, skunky earthy finish",
+  effects: "Relaxing high, subtle euphoric lift",
+  time: "75-80 days"
+},
+{
+  name: "El Frost Monster F2",
+  type: "Auto Fem",
+  lineage: "El Frost Monster bred to F2",
+  dominance: "Indica leaning hybrid",
+  terpenes: "Myrcene, Caryophyllene, Limonene",
+  flavor: "Sweet berry, cool pine, pungent earthy finish",
+  effects: "Relaxing high, slight euphoric lift",
+  time: "75-80 days"
+},
+{
+  name: "El Misfits",
+  type: "Auto Fem",
+  lineage: "El Frost Monster x Frankenfunk x Rickie Bobbie",
+  dominance: "Indica leaning hybrid",
+  terpenes: "Myrcene, Caryophyllene, Limonene",
+  flavor: "Sweet berry, burnt rubber, pungent earthy finish",
+  effects: "Relaxing high, subtle euphoric buzz",
+  time: "75-80 days"
+},
+{
+  name: "Whiteout",
+  type: "Auto Fem",
+  lineage: "El Frost Monster x Ice Monster Cookies x Tahoe OG",
+  dominance: "Indica leaning hybrid",
+  terpenes: "Myrcene, Caryophyllene, Limonene",
+  flavor: "Cool pine, sweet cookie, skunky earthy finish",
+  effects: "Relaxing high, mild euphoric lift",
+  time: "75-80 days"
+},
+{
+  name: "Monster Squad",
+  type: "Auto Fem",
+  lineage: "El Frost Monster x Rickie Bobbie x Sweet Burnout",
+  dominance: "Indica leaning hybrid",
+  terpenes: "Myrcene, Limonene, Caryophyllene",
+  flavor: "Sweet berry, burnt rubber, skunky earthy finish",
+  effects: "Relaxing high, subtle euphoric buzz",
+  time: "75-80 days"
+},
+{
+  name: "Grave Digger",
+  type: "Auto Fem",
+  lineage: "El Frost Monster x Grape God x Girl Scout Cookies",
+  dominance: "Indica leaning hybrid",
+  terpenes: "Myrcene, Limonene, Caryophyllene",
+  flavor: "Juicy grape, cool pine, creamy skunky finish",
+  effects: "Relaxing high, mild euphoric lift",
+  time: "75-80 days"
+},
+{
+  name: "N.F.S.O.T.",
+  type: "Auto Fem",
+  lineage: "El Frost Monster x Supreme Runts x Kushmints",
+  dominance: "Indica leaning hybrid",
+  terpenes: "Myrcene, Limonene, Caryophyllene",
+  flavor: "Sweet berry, cool mint, skunky earthy finish",
+  effects: "Relaxing high, subtle euphoric buzz",
+  time: "75-80 days"
+},
+{
+  name: "Runts",
+  type: "Auto Fem",
+  lineage: "Sour Black Cherry Haze x Bipolar Bissell",
+  dominance: "Sativa leaning hybrid",
+  terpenes: "Pinene, Myrcene, Caryophyllene",
+  flavor: "Sweet cherry, zesty lemon, skunky earthy finish",
+  effects: "Uplifting high, relaxing edge",
+  time: "85-90 days"
+},
+{
+  name: "Hazy Bissell",
+  type: "Auto Fem",
+  lineage: "Skywalker Haze x Blueberry Haze x Amnesia Haze",
+  dominance: "Sativa",
+  terpenes: "Limonene, Pinene, Myrcene",
+  flavor: "Juicy blueberry, tart raspberry, spicy earthy finish",
+  effects: "Vibrant uplifting high",
+  time: "90-95 days"
+},
+{
+  name: "Blue Raz Haze",
+  type: "Auto Fem",
+  lineage: "Granite Haze x Purple Haze x Gorilla Candy",
+  dominance: "Sativa",
+  terpenes: "Limonene, Myrcene, Caryophyllene",
+  flavor: "Juicy candy, zesty lemon, skunky earthy finish",
+  effects: "Vibrant uplifting high",
+  time: "90-95 days"
+},
+{
+  name: "Rubik’s Cube",
+  type: "Auto Fem",
+  lineage: "Sour Black Cherry Haze x Amnesia Haze x Vanilla Scoops",
+  dominance: "Sativa leaning hybrid",
+  terpenes: "Pinene, Limonene, Myrcene",
+  flavor: "Juicy cherry, zesty lemon, smooth earthy finish",
+  effects: "Uplifting high, relaxing edge",
+  time: "85-90 days"
+},
+{
+  name: "Forgetful Cherries",
+  type: "Auto Fem",
+  lineage: "Lemon Haze x Sour Black Cherry Haze x Super Lemon Haze",
+  dominance: "Sativa leaning hybrid",
+  terpenes: "Limonene, Pinene, Myrcene",
+  flavor: "Bright citrus, juicy cherry, spicy earthy finish",
+  effects: "Uplifting high, mild relaxing edge",
+  time: "85-90 days"
+},
+{
+  name: "Lemon Cherry Haze",
+  type: "Auto Fem",
+  lineage: "Ghost Train Haze x Sour Black Cherry Haze x Gorilla Candy",
+  dominance: "Sativa leaning hybrid",
+  terpenes: "Limonene, Pinene, Myrcene",
+  flavor: "Zesty lemon, juicy cherry, sweet earthy finish",
+  effects: "Vibrant uplifting high, subtle relaxing edge",
+  time: "85-90 days"
+},
+{
+  name: "Quantum Leap",
+  type: "Auto Fem",
+  lineage: "Sour Black Cherry Haze x Purple Haze x Grape Gas",
+  dominance: "Sativa leaning hybrid",
+  terpenes: "Limonene, Myrcene, Caryophyllene",
+  flavor: "Juicy cherry, sweet grape, spicy earthy finish",
+  effects: "Uplifting high, mild relaxing edge",
+  time: "85-90 days"
+},
+{
+  name: "The Purple Tornado",
+  type: "Auto Fem",
+  lineage: "Blackberry Auto x Blappleberry Haze x Bipolar Bissell",
+  dominance: "Sativa leaning hybrid",
+  terpenes: "Myrcene, Limonene, Pinene",
+  flavor: "Juicy blackberry, crisp apple, spicy earthy finish",
+  effects: "Uplifting high, mild relaxing edge",
+  time: "85-90 days"
+},
+ {
+  name: "FrooTie Tootie",
+  type: "Auto Fem",
+  lineage: "Sour Black Cherry Haze x Sour Diesel x New York City Diesel",
+  dominance: "Indica leaning hybrid",
+  terpenes: "Pinene, Phellandrene, Myrcene",
+  flavor: "Sweet cherry, sour diesel, complex earthy finish",
+  effects: "Uplifting yet relaxing high",
+  time: "75-80 days"
+},
+{
+  name: "Black Cherry Sour Diesel",
+  type: "Auto Fem",
+  lineage: "Cherry Pie x Vanilla Scoops x Moonberry Pie",
+  dominance: "Full Indica",
+  terpenes: "Myrcene, Limonene, Caryophyllene",
+  flavor: "Juicy cherry, creamy vanilla, earthy berry finish",
+  effects: "Relaxing high",
+  time: "70-80 days"
+},
+{
+  name: "Cherry Vanilla Sundae",
+  type: "Auto Fem",
+  lineage: "Vanilla Scoops x Vanna’s Vanilla x Vanilla Slushy",
+  dominance: "Indica leaning hybrid",
+  terpenes: "Myrcene, Limonene, Caryophyllene",
+  flavor: "Smooth vanilla, sweet cream, earthy finish",
+  effects: "Relaxing high, subtle euphoria",
+  time: "75-80 days"
+},
+{
+  name: "Crazy Vanilla",
+  type: "Auto Fem",
+  lineage: "Vanilla Slushy x Frosted Cheerios x Vanilla Scoops",
+  dominance: "Indica leaning hybrid",
+  terpenes: "Myrcene, Limonene, Pinene",
+  flavor: "Juicy cherry, smooth vanilla, cereal-like finish",
+  effects: "Chill uplifting high",
+  time: "75-80 days"
+},
+{
+  name: "Cherry Freeze Pop",
+  type: "Auto Fem",
+  lineage: "Vanilla Slushy x Banana Daddy x Banana Kush",
+  dominance: "Full Indica",
+  terpenes: "Myrcene, Caryophyllene, Limonene",
+  flavor: "Rich banana, tropical vanilla, kushy finish",
+  effects: "Heavy relaxing high",
+  time: "70-80 days"
+},
+{
+  name: "Banana Pudding",
+  type: "Auto Fem",
+  lineage: "Vanilla Scoops x Orange Apricot x Lime Kush Auto",
+  dominance: "Indica leaning hybrid",
+  terpenes: "Limonene, Myrcene, Caryophyllene",
+  flavor: "Tart lime, sweet apricot, earthy finish",
+  effects: "Refreshing relaxing high",
+  time: "75-80 days"
+},
+{
+  name: "Key Lime Pie",
+  type: "Auto Fem",
+  lineage: "Auto Biscotti Ice Cream x Mephisto’s Wedding x Honeymoon Passion",
+  dominance: "Indica leaning hybrid",
+  terpenes: "Beta-caryophyllene, Limonene, Myrcene",
+  flavor: "Rich biscotti, sweet cream, berry gassy finish",
+  effects: "Euphoric yet relaxing high",
+  time: "75-80 days"
+},
+{
+  name: "Tiara Miss Ooh",
+  type: "Auto Fem",
+  lineage: "Burnt Orange x Vanilla Scoops x Top Gun",
+  dominance: "Indica leaning hybrid",
+  terpenes: "Limonene, Myrcene, Beta-caryophyllene",
+  flavor: "Tangy orange, smooth vanilla, earthy diesel",
+  effects: "Balanced uplifting and relaxing high",
+  time: "75-80 days"
+},
+{
+  name: "Cream Sickle Dream",
+  type: "Auto Fem",
+  lineage: "Blueberry Auto x Super OG x Vanilla Scoops",
+  dominance: "Full Indica",
+  terpenes: "Myrcene, Limonene, Pinene",
+  flavor: "Rich blueberry, creamy vanilla, skunky OG",
+  effects: "Deep relaxing high, slightly euphoric",
+  time: "70-80 days"
+},
+{
+  name: "Blueberry Parfait",
+  type: "Auto Fem",
+  lineage: "Blueberry Slushy x Cookies and Cream Auto x Super OG",
+  dominance: "Full Indica",
+  terpenes: "Myrcene, Limonene, Caryophyllene",
+  flavor: "Juicy blueberry, rich cream, skunky OG",
+  effects: "Smooth relaxing high, euphoric",
+  time: "70-80 days"
+},
+{
+  name: "Blueberry Milkshake",
+  type: "Auto Fem",
+  lineage: "Pappy’s Breath x Purple Rockberry 23 x Vanilla Scoops",
+  dominance: "Indica leaning hybrid",
+  terpenes: "Myrcene, Limonene, Beta-caryophyllene",
+  flavor: "Juicy blueberry, purple fruit, vanilla finish",
+  effects: "Relaxing, slightly uplifting high",
+  time: "75-80 days"
+},
+{
+  name: "Berry’s Breath",
+  type: "Auto Fem",
+  lineage: "Bubba Kushmints x Pappy’s Breath x Grape Slurrie",
+  dominance: "Full Indica",
+  terpenes: "Caryophyllene, Myrcene, Limonene",
+  flavor: "Juicy grape, creamy vanilla, funky skunk",
+  effects: "Deep relaxing high, euphoric",
+  time: "70-80 days"
+},
+{
+  name: "Rotten Grapes",
+  type: "Auto Fem",
+  lineage: "Garlic Pappy’s x Mexican Airlines x Coal Miner’s Daughter",
+  dominance: "Full Indica",
+  terpenes: "Caryophyllene, Myrcene, Limonene",
+  flavor: "Bold garlic, herbal zest, skunky earthy finish",
+  effects: "Heavy relaxing high",
+  time: "70-80 days"
+},
+{
+  name: "Booger Breath",
+  type: "Auto Fem",
+  lineage: "Pappy’s Breath x Terp Sneeze x Mexican Airlines",
+  dominance: "Indica leaning hybrid",
+  terpenes: "Caryophyllene, Myrcene, Limonene",
+  flavor: "Skunky garlic, zesty citrus, herbal peppery finish",
+  effects: "Potent relaxing high, slight uplift",
+  time: "75-80 days"
+},
+{
+  name: "Monkey Breath",
+  type: "Auto Fem",
+  lineage: "Pappy’s Breath x Gorilla Cookies x Kushmints",
+  dominance: "Full Indica",
+  terpenes: "Caryophyllene, Myrcene, Limonene",
+  flavor: "Pungent garlic, chocolate cookie, mint finish",
+  effects: "Heavy relaxing high, touch of euphoria",
+  time: "70-80 days"
+},
+{
+  name: "Cookie Breath",
+  type: "Auto Fem",
+  lineage: "Pappy’s Breath x Forgotten Cookies x Cookies Punch",
+  dominance: "Full Indica",
+  terpenes: "Caryophyllene, Myrcene, Limonene",
+  flavor: "Rich chocolate cookie, fruity gassy finish",
+  effects: "Deep relaxing high, subtle uplift",
+  time: "70-80 days"
+},
+{
+  name: "Martian Breath",
+  type: "Auto Fem",
+  lineage: "Pappy’s Breath x Advanced Alien Tech x Alien OG",
+  dominance: "Indica leaning hybrid",
+  terpenes: "Caryophyllene, Myrcene, Pinene",
+  flavor: "Pungent garlic, citrus OG, earthy gas",
+  effects: "Heavy relaxing high, slight cerebral buzz",
+  time: "75-80 days"
+},
+{
+  name: "Margarita Wedding",
+  type: "Auto Fem",
+  lineage: "Mephisto’s Wedding x Grapefruit Auto x Vanilla Scoops",
+  dominance: "Indica leaning hybrid",
+  terpenes: "Limonene, Myrcene, Caryophyllene",
+  flavor: "Tart citrus, sweet vanilla, floral earth",
+  effects: "Relaxing yet uplifting high",
+  time: "75-80 days"
+},
+{
+  name: "Grapefruit Sour Diesel",
+  type: "Auto Fem",
+  lineage: "New York City Diesel x Sour Diesel x Grapefruit Auto",
+  dominance: "Indica leaning hybrid",
+  terpenes: "Limonene, Caryophyllene, Myrcene",
+  flavor: "Zesty citrus, pungent diesel, skunky earth",
+  effects: "Uplifting yet relaxing high",
+  time: "60-70 days"
+},
+{
+  name: "Ruby Red",
+  type: "Auto Fem",
+  lineage: "Grapefruit Auto x Top Gun x Daiquiri Lime Auto",
+  dominance: "Indica leaning hybrid",
+  terpenes: "Limonene, Myrcene, Caryophyllene",
+  flavor: "Tart grapefruit, zesty lime, sweet citrus finish",
+  effects: "Relaxing high, subtle uplift",
+  time: "75-80 days"
+},
+{
+  name: "Beast Mode",
+  type: "Auto Fem",
+  lineage: "Jogi Diamonds x Diablo Rojo x Kerosene Crash",
+  dominance: "Indica leaning hybrid",
+  terpenes: "Myrcene, Caryophyllene, Limonene",
+  flavor: "Creamy vanilla, rich cookie, skunky herbal",
+  effects: "Relaxing high, subtle euphoric buzz",
+  time: "75-80 days"
+},
+{
+  name: "Cookies and Cream",
+  type: "Auto Fem",
+  lineage: "MAC Volume 2 x Vanilla Scoops x Forgotten Cookies",
+  dominance: "Balanced hybrid",
+  terpenes: "Limonene, Pinene, Caryophyllene",
+  flavor: "Zesty lemon, sour citrus, earthy finish",
+  effects: "Uplifting yet relaxing high",
+  time: "80-85 days"
+},
+{
+  name: "H8TER-AID",
+  type: "Auto Fem",
+  lineage: "Jack Herer x Jealousy x Sour Jealousy",
+  dominance: "Indica leaning hybrid",
+  terpenes: "Caryophyllene, Myrcene, Limonene",
+  flavor: "Garlic funk, blueberry sweetness",
+  effects: "Heavy relaxing high",
+  time: "70-80 days"
+},
+{
+  name: "Cosmic Drift",
+  type: "Auto Fem",
+  lineage: "Monkey Breath x Permanent Marker x Blue Face OG",
+  dominance: "Indica leaning hybrid",
+  terpenes: "Caryophyllene, Myrcene, Limonene",
+  flavor: "Chocolate cookie, garlic, skunky spice",
+  effects: "Deep relaxing high",
+  time: "70-80 days"
+},
+{
+  name: "Glacier Gas",
+  type: "Auto Fem",
+  lineage: "Girl Scout Cookies x Dark Matter x GMO",
+  dominance: "Indica leaning hybrid",
+  terpenes: "Caryophyllene, Myrcene, Limonene",
+  flavor: "Garlic, icy vanilla, sharp funk",
+  effects: "Heavy relaxing high",
+  time: "70-80 days"
+},
+{
+  name: "Titan’s Kiss",
+  type: "Auto Fem",
+  lineage: "GMO Eight x Frozen Scoops x Permanent Marker",
+  dominance: "Indica leaning hybrid",
+  terpenes: "Myrcene, Caryophyllene, Limonene",
+  flavor: "Blackberry, skunk, garlic funk",
+  effects: "Heavy relaxing high",
+  time: "70-80 days"
+},
+{
+  name: "Sombrero’s Clock",
+  type: "Auto Fem",
+  lineage: "Strawberry Kiss x Titan Nine x Boss Hog",
+  dominance: "Indica leaning hybrid",
+  terpenes: "Myrcene, Limonene, Caryophyllene",
+  flavor: "Strawberry, citrus, skunky earth",
+  effects: "Relaxing high",
+  time: "75-80 days"
+    }
+    ],
+fastFlower: [
     {
       name: "Watermelon Donkey Deez",
       type: "Fast Flower",
