@@ -1044,7 +1044,22 @@ const strains = {
   flavor: "Strawberry, citrus, skunky earth",
   effects: "Relaxing high",
   time: "75-80 days"
-    }
+    },
+    {
+  name: "Pappy's Breath F2",
+  type: "Auto Fem",
+  lineage: "Pappy's Breath bred to F2"
+},
+{
+  name: "Hunch Punch F2",
+  type: "Auto Fem",
+  lineage: "Blackberry x Skunk x GMO8"
+},
+{
+  name: "Monkey Breath F3",
+  type: "Auto Fem",
+  lineage: "Pappy's Breath x Gorilla Cookies x Kushmints, bred to F3"
+},
     ],
   
 fastFlower: [
