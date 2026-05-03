@@ -16,9 +16,7 @@
       text-align: center;
     }
 
-    header {
-      padding: 30px 16px 15px;
-    }
+    header { padding: 30px 16px 15px; }
 
     h1 {
       color: #39ff14;
@@ -27,11 +25,7 @@
       text-shadow: 0 0 14px #39ff14;
     }
 
-    .tagline {
-      color: #ccc;
-      margin-top: 8px;
-      font-size: 1rem;
-    }
+    .tagline { color: #ccc; margin-top: 8px; font-size: 1rem; }
 
     .nav {
       padding: 12px;
@@ -42,7 +36,7 @@
       border-bottom: 1px solid #143b14;
     }
 
-    .nav a {
+    .nav a, .letter-btn, .clear-btn {
       display: inline-block;
       color: #fff;
       border: 1px solid #39ff14;
@@ -53,17 +47,52 @@
       box-shadow: 0 0 8px #39ff14;
       font-weight: bold;
       font-size: 0.9rem;
+      background: #000;
+      cursor: pointer;
     }
 
-    section {
-      padding: 22px 14px;
+    .letter-btn.active {
+      background: #39ff14;
+      color: #000;
     }
+
+    section { padding: 22px 14px; }
 
     h2 {
       color: #39ff14;
       font-size: 2rem;
       margin: 20px 0;
       text-shadow: 0 0 10px #39ff14;
+    }
+
+    .search-card, .order-card {
+      max-width: 720px;
+      margin: 14px auto;
+      padding: 18px;
+      border: 2px solid #39ff14;
+      border-radius: 18px;
+      background: #050505;
+      box-shadow: 0 0 12px #39ff14;
+      line-height: 1.5;
+    }
+
+    #searchInput {
+      width: calc(100% - 28px);
+      max-width: 650px;
+      padding: 14px;
+      border-radius: 12px;
+      border: 2px solid #39ff14;
+      background: #000;
+      color: #fff;
+      font-size: 1rem;
+      outline: none;
+      box-shadow: 0 0 8px #39ff14;
+    }
+
+    .result-count {
+      color: #aaa;
+      margin-top: 14px;
+      font-size: 0.95rem;
     }
 
     .strain-card {
@@ -102,24 +131,11 @@
       border-top: 1px solid #145214;
     }
 
-    .strain-details p {
-      margin: 9px 0;
-    }
+    .strain-details p { margin: 9px 0; }
 
     .label {
       color: #39ff14;
       font-weight: bold;
-    }
-
-    .order-card {
-      max-width: 720px;
-      margin: 14px auto;
-      padding: 18px;
-      border: 2px solid #39ff14;
-      border-radius: 18px;
-      background: #050505;
-      box-shadow: 0 0 12px #39ff14;
-      line-height: 1.5;
     }
 
     .pay-link {
@@ -162,13 +178,27 @@
   </header>
 
   <nav class="nav">
+    <a href="#search">Search</a>
     <a href="#autoFem">Auto / Fem</a>
     <a href="#fastFlower">Fast Flower</a>
     <a href="#pricing">Pricing</a>
     <a href="#order">Order</a>
   </nav>
 
-  <!-- PRICING -->
+  <section id="search">
+    <h2>Search Catalog</h2>
+
+    <div class="search-card">
+      <input id="searchInput" type="text" placeholder="Search name, lineage, flavor, effects, F3, diesel, garlic..." />
+
+      <div id="letterFilters"></div>
+
+      <button class="clear-btn" id="clearFilters">Clear Search</button>
+
+      <div class="result-count" id="resultCount"></div>
+    </div>
+  </section>
+
   <section id="pricing">
     <h2>Pricing</h2>
 
@@ -229,6 +259,18 @@
 
     const autoFemList = document.getElementById("autoFemList");
     const fastFlowerList = document.getElementById("fastFlowerList");
+    const searchInput = document.getElementById("searchInput");
+    const letterFilters = document.getElementById("letterFilters");
+    const clearFilters = document.getElementById("clearFilters");
+    const resultCount = document.getElementById("resultCount");
+
+    let activeLetter = "All";
+
+    const alphabet = ["All", ..."ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
+
+    letterFilters.innerHTML = alphabet
+      .map(letter => `<button class="letter-btn" data-letter="${letter}">${letter}</button>`)
+      .join("");
 
     function field(label, value) {
       if (!value) return "";
@@ -259,19 +301,93 @@
       `;
     }
 
-    autoFemList.innerHTML = (strains.autoFem || []).map(renderStrain).join("");
-    fastFlowerList.innerHTML = (strains.fastFlower || []).map(renderStrain).join("");
+    function searchableText(strain) {
+      return [
+        strain.name,
+        strain.type,
+        strain.lineage,
+        strain.dominance,
+        strain.thc,
+        strain.ease,
+        strain.yield,
+        strain.time,
+        strain.terpenes,
+        strain.flavor,
+        strain.effects,
+        strain.note
+      ]
+        .filter(Boolean)
+        .join(" ")
+        .toLowerCase();
+    }
 
-    document.querySelectorAll(".strain-button").forEach((button) => {
-      button.addEventListener("click", () => {
-        const details = button.nextElementSibling;
-        const icon = button.querySelector("span");
-        const open = details.style.display === "block";
+    function sortByName(list) {
+      return [...list].sort((a, b) => a.name.localeCompare(b.name));
+    }
 
-        details.style.display = open ? "none" : "block";
-        icon.textContent = open ? "+" : "−";
+    function filterList(list) {
+      const query = searchInput.value.trim().toLowerCase();
+
+      return sortByName(list).filter(strain => {
+        const matchesSearch = !query || searchableText(strain).includes(query);
+        const matchesLetter = activeLetter === "All" || strain.name.toUpperCase().startsWith(activeLetter);
+
+        return matchesSearch && matchesLetter;
       });
+    }
+
+    function bindCardClicks() {
+      document.querySelectorAll(".strain-button").forEach((button) => {
+        button.addEventListener("click", () => {
+          const details = button.nextElementSibling;
+          const icon = button.querySelector("span");
+          const open = details.style.display === "block";
+
+          details.style.display = open ? "none" : "block";
+          icon.textContent = open ? "+" : "−";
+        });
+      });
+    }
+
+    function updateActiveButton() {
+      document.querySelectorAll(".letter-btn").forEach(button => {
+        button.classList.toggle("active", button.dataset.letter === activeLetter);
+      });
+    }
+
+    function renderAll() {
+      const filteredAuto = filterList(strains.autoFem || []);
+      const filteredFast = filterList(strains.fastFlower || []);
+
+      autoFemList.innerHTML = filteredAuto.map(renderStrain).join("");
+      fastFlowerList.innerHTML = filteredFast.map(renderStrain).join("");
+
+      const total = filteredAuto.length + filteredFast.length;
+      resultCount.textContent = `Showing ${total} result${total === 1 ? "" : "s"}`;
+
+      updateActiveButton();
+      bindCardClicks();
+    }
+
+    letterFilters.addEventListener("click", (event) => {
+      if (!event.target.matches(".letter-btn")) return;
+
+      activeLetter = event.target.dataset.letter;
+      renderAll();
     });
+
+    searchInput.addEventListener("input", () => {
+      activeLetter = "All";
+      renderAll();
+    });
+
+    clearFilters.addEventListener("click", () => {
+      searchInput.value = "";
+      activeLetter = "All";
+      renderAll();
+    });
+
+    renderAll();
   </script>
 </body>
 </html>
