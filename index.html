@@ -189,27 +189,21 @@
     <h2>Search Catalog</h2>
 
     <div class="search-card">
-      <input id="searchInput" type="text" placeholder="Search name, lineage, flavor, effects, F3, diesel, garlic..." />
-
+      <input id="searchInput" type="text" placeholder="Search anything: F3, garlic, diesel, berry..." />
       <div id="letterFilters"></div>
-
       <button class="clear-btn" id="clearFilters">Clear Search</button>
-
       <div class="result-count" id="resultCount"></div>
     </div>
   </section>
 
   <section id="pricing">
     <h2>Pricing</h2>
-
     <div class="order-card">
       3 Pack — $25<br>
       5 Pack — $30<br>
       10 Pack — $50<br><br>
-
       <strong>Spring Special</strong><br>
       10 × 3-packs — $100<br><br>
-
       <strong>Shipping</strong><br>
       All orders add $10 shipping.
     </div>
@@ -244,7 +238,7 @@
       Venmo: @charles-Germond-1
     </a>
 
-    <a class="email-btn" href="mailto:bookingchuckeg@gmail.com?subject=AFA Genetics Order&body=Strain Name(s):%0A%0AQuantity:%0A%0AShipping Info:%0A">
+    <a class="email-btn" href="mailto:bookingchuckeg@gmail.com?subject=AFA Genetics Order&body=Strain Name(s):%0A%0AQuantity:%0AShipping Info:%0A">
       Email Order
     </a>
   </section>
@@ -315,23 +309,15 @@
         strain.flavor,
         strain.effects,
         strain.note
-      ]
-        .filter(Boolean)
-        .join(" ")
-        .toLowerCase();
-    }
-
-    function sortByName(list) {
-      return [...list].sort((a, b) => a.name.localeCompare(b.name));
+      ].filter(Boolean).join(" ").toLowerCase();
     }
 
     function filterList(list) {
       const query = searchInput.value.trim().toLowerCase();
 
-      return sortByName(list).filter(strain => {
+      return list.filter(strain => {
         const matchesSearch = !query || searchableText(strain).includes(query);
         const matchesLetter = activeLetter === "All" || strain.name.toUpperCase().startsWith(activeLetter);
-
         return matchesSearch && matchesLetter;
       });
     }
@@ -371,7 +357,6 @@
 
     letterFilters.addEventListener("click", (event) => {
       if (!event.target.matches(".letter-btn")) return;
-
       activeLetter = event.target.dataset.letter;
       renderAll();
     });
