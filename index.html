@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -279,12 +278,23 @@
       return `<p><span class="label">${label}:</span> ${value}</p>`;
     }
 
-    function renderStrain(strain) {
+    function getImagePath(strain) {
       const image = strainImages[strain.name];
+      if (!image) return "";
+
+      if (image.startsWith("/images/")) {
+        return `/public${image}`;
+      }
+
+      return image;
+    }
+
+    function renderStrain(strain) {
+      const image = getImagePath(strain);
 
       return `
         <div class="strain-card">
-          ${image ? `<img src="${image}" class="strain-img" alt="${strain.name}">` : ""}
+          ${image ? `<img src="${image}" class="strain-img" alt="${strain.name}" onerror="this.style.display='none'">` : ""}
 
           <button class="strain-button">
             ${strain.name}
