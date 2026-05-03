@@ -1146,6 +1146,7 @@ const strains = {
   time: "75-80 days"
     }
     ],
+  
 fastFlower: [
     {
       name: "Watermelon Donkey Deez",
