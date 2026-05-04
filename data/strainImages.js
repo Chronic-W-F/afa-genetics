@@ -1,4 +1,5 @@
 const strainImages = {
+  "Key Lime Pie": "/images/key-lime-pie.jpeg",
   "Berry's Breath": "/images/berrys-breath.png",
   "The Purple Tornado": "/images/the-purple-tornado.png",
   "Banana Pudding": "/images/banana-pudding.jpeg",
