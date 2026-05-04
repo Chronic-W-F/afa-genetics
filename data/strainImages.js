@@ -1,4 +1,5 @@
 const strainImages = {
+  "Skunky Chicken": "/images/skunky-chicken.jpeg",
   "Earthquake Typhoon": "/images/earthquake-typhoon.png",
   "Monkey Bash": "/images/monkey-bash.png",
   "Blueberry Milkshake": "/images/blueberry-milkshake.jpeg",
