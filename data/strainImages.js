@@ -1,4 +1,6 @@
 const strainImages = {
+  "Hunch Punch F2": "/images/hunch-punch-f2.jpeg",
+  "Sombrero's Clock": "/images/sombreros-clock.jpeg",
   "Black Cherry Sour Diesel": "/images/black-cherry-sour-diesel.jpeg",
   "Key Lime Pie": "/images/key-lime-pie.jpeg",
   "Berry's Breath": "/images/berrys-breath.png",
