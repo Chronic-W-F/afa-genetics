@@ -17,7 +17,7 @@ const strains = {
       flavor: "Extra dense, resin heavy, sweet profile, slight stretch"
     },
     {
-      name: "Glazed Oreos",
+      name: "Glazed Oreoz",
       thc: "28-32%",
       ease: "8",
       yield: "Large",
