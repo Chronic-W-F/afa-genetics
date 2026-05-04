@@ -1,5 +1,5 @@
 const strainImages = {
-  /public/images/berry's-breath.png
+  "Berry’s Breath": "/images/berry's-breath.png",
   "The Purple Tornado": "/images/the-purple-tornado.png",
   "Banana Pudding": "/images/banana-pudding.jpeg",
   "Monkey Business": "/images/monkey-business.jpeg",
