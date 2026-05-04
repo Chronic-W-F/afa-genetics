@@ -1,4 +1,5 @@
 const strainImages = {
+  "Iced Out": "/images/iced-out.jpeg",
   "Blue Razz Haze": "/images/blue-razz-haze.jpeg",
   "Frosty Kong": "/images/frosty-kong.jpeg",
   "Hazy Bissell": "/images/hazy-bissell.png",
