@@ -1,5 +1,5 @@
 const strainImages = {
-  "Cookies & Cream": "/images/cookies-and-cream.jpeg",
+  "Cookies and Cream": "/images/cookies-and-cream.jpeg",
   "Rocky Road": "/images/rocky-road.jpeg",
   "Hunch Punch": "/images/hunch-punch.png",
   "Hunch Punch F2": "/images/hunch-punch-f2.jpeg",
