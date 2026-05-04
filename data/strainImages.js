@@ -1,4 +1,6 @@
 const strainImages = {
+  "Frosted Terps F3": "/images/frosted-terps-f3.png",
+"Platinum Frosted Terps": "/images/platinum-frosted-terps.png",
   "Ice Catcher": "/images/ice-catcher.jpeg",
   "Gummy Blast": "/images/gummy-blast.jpeg",
   "Zesty Lemon": "/images/zesty-lemon.jpeg",
