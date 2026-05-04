@@ -472,16 +472,6 @@ const strains = {
       time: "75-80 days"
     },
     {
-      name: "Monkey Business",
-      type: "Auto Fem",
-      lineage: "Grease Monkey x Purple Punch Auto",
-      dominance: "Hybrid",
-      terpenes: "Myrcene, Caryophyllene, Limonene",
-      flavor: "Sweet banana, creamy gas, slight earthy funk",
-      effects: "Balanced high, euphoric with relaxing body",
-      time: "75-80 days"
-    },
-    {
       name: "Super OG",
       type: "Auto Fem",
       lineage: "Jogi OG x Super Garlic x Blueberry",
