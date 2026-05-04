@@ -702,7 +702,7 @@ const strains = {
       time: "85-90 days"
     },
     {
-      name: "Blue Raz Haze",
+      name: "Blue Razz Haze",
       type: "Auto Fem",
       lineage: "Skywalker Haze x Blueberry Haze x Amnesia Haze",
       dominance: "Sativa",
