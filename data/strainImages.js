@@ -1,4 +1,5 @@
 const strainImages = {
+  "Blueberry Milkshake": "/images/blueberry-milkshake.jpeg",
   "Cookie Dough": "/images/cookie-dough.jpeg",
   "Watermelon Donkey Deez": "/images/watermelon-donkey-deez.jpeg",
   "Cosmic Crunch": "/images/cosmic-crunch.png",
