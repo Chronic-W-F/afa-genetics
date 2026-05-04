@@ -1,4 +1,5 @@
 const strainImages = {
+  "Cosmic Crunch": "/images/cosmic-crunch.png",
   "Biscotti Crunch": "/images/biscotti-crunch.png",
   "Frosted Terps F3": "/images/frosted-terps-f3.png",
 "Platinum Frosted Terps": "/images/platinum-frosted-terps.png",
