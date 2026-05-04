@@ -1,4 +1,5 @@
 const strainImages = {
+  "Cookie Dough": "/images/cookie-dough.jpeg",
   "Watermelon Donkey Deez": "/images/watermelon-donkey-deez.jpeg",
   "Cosmic Crunch": "/images/cosmic-crunch.png",
   "Biscotti Crunch": "/images/biscotti-crunch.png",
