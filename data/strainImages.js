@@ -1,5 +1,5 @@
 const strainImages = {
-  "H8ter Aid": "/images/h8ter-aid.jpeg",
+  "H8TER AID": "/images/h8ter-aid.jpeg",
   "Iced Out": "/images/iced-out.jpeg",
   "Blue Razz Haze": "/images/blue-razz-haze.jpeg",
   "Frosty Kong": "/images/frosty-kong.jpeg",
