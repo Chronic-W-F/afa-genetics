@@ -1,4 +1,5 @@
 const strainImages = {
+  "Tiara Miss Ooh": "/images/tiara-miss-ooh.jpeg",
   "Beast Mode": "/images/beast-mode.jpeg",
   "Whiteout": "/images/whiteout.png",
 "NFSOT Runtz": "/images/nfsot-runtz.png",
