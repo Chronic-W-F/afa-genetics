@@ -1,4 +1,5 @@
 const strainImages = {
+  "Cherry Vanilla Sundae": "/images/cherry-vanilla-sundae.jpeg",
   "Tiara Miss Ooh": "/images/tiara-miss-ooh.jpeg",
   "Beast Mode": "/images/beast-mode.jpeg",
   "Whiteout": "/images/whiteout.png",
