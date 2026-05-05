@@ -1,4 +1,5 @@
 const strainImages = {
+  "Beast Mode": "/images/beast-mode.jpeg",
   "Whiteout": "/images/whiteout.png",
 "NFSOT Runtz": "/images/nfsot-runtz.png",
   "Luke Sky Monster": "/images/luke-sky-monster.jpeg",
