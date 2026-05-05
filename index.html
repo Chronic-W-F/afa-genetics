@@ -1,256 +1,386 @@
-<!DOCTYPE html><html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AFA Genetics</title>  <style>
-    html { scroll-behavior: smooth; }
+<!DOCTYPE html>  <html lang="en">  
+<head>  
+  <meta charset="UTF-8" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+  <title>AFA Genetics</title>    <style>  
+    html { scroll-behavior: smooth; }  
+  
+    body {  
+      margin: 0;  
+      font-family: Arial, sans-serif;  
+      background: #000;  
+      color: #fff;  
+      text-align: center;  
+    }  
+  
+    header { padding: 30px 16px 15px; }  
+  
+    h1 {  
+      color: #39ff14;  
+      font-size: 2.6rem;  
+      margin: 0;  
+      text-shadow: 0 0 14px #39ff14;  
+    }  
+  
+    .tagline { color: #ccc; margin-top: 8px; font-size: 1rem; }  
+  
+    .nav {  
+      padding: 12px;  
+      position: sticky;  
+      top: 0;  
+      background: #000;  
+      z-index: 10;  
+      border-bottom: 1px solid #143b14;  
+    }  
+  
+    .nav a, .letter-btn, .clear-btn {  
+      display: inline-block;  
+      color: #fff;  
+      border: 1px solid #39ff14;  
+      border-radius: 999px;  
+      padding: 9px 13px;  
+      margin: 5px;  
+      text-decoration: none;  
+      box-shadow: 0 0 8px #39ff14;  
+      font-weight: bold;  
+      font-size: 0.9rem;  
+      background: #000;  
+      cursor: pointer;  
+    }  
+  
+    .letter-btn.active {  
+      background: #39ff14;  
+      color: #000;  
+    }  
+  
+    section { padding: 22px 14px; }  
+  
+    h2 {  
+      color: #39ff14;  
+      font-size: 2rem;  
+      margin: 20px 0;  
+      text-shadow: 0 0 10px #39ff14;  
+    }  
+  
+    .search-card, .order-card {  
+      max-width: 720px;  
+      margin: 14px auto;  
+      padding: 18px;  
+      border: 2px solid #39ff14;  
+      border-radius: 18px;  
+      background: #050505;  
+      box-shadow: 0 0 12px #39ff14;  
+      line-height: 1.5;  
+    }  
+  
+    #searchInput {  
+      width: calc(100% - 28px);  
+      max-width: 650px;  
+      padding: 14px;  
+      border-radius: 12px;  
+      border: 2px solid #39ff14;  
+      background: #000;  
+      color: #fff;  
+      font-size: 1rem;  
+      outline: none;  
+      box-shadow: 0 0 8px #39ff14;  
+    }  
+  
+    .result-count {  
+      color: #aaa;  
+      margin-top: 14px;  
+      font-size: 0.95rem;  
+    }  
+  
+    .strain-card {  
+      max-width: 720px;  
+      margin: 14px auto;  
+      border: 2px solid #39ff14;  
+      border-radius: 18px;  
+      background: #050505;  
+      box-shadow: 0 0 12px #39ff14;  
+      overflow: hidden;  
+      text-align: left;  
+    }  
+  
+    .strain-img {  
+      width: 100%;  
+      display: block;  
+      border-bottom: 1px solid #145214;  
+    }  
+  
+    .strain-button {  
+      width: 100%;  
+      border: 0;  
+      background: transparent;  
+      color: #fff;  
+      padding: 18px;  
+      font-size: 1.15rem;  
+      font-weight: bold;  
+      text-align: left;  
+      cursor: pointer;  
+    }  
+  
+    .strain-button span {  
+      color: #39ff14;  
+      float: right;  
+    }  
+  
+    .strain-details {  
+      display: none;  
+      padding: 0 18px 18px;  
+      color: #ddd;  
+      line-height: 1.45;  
+      border-top: 1px solid #145214;  
+    }  
+  
+    .strain-details p { margin: 9px 0; }  
+  
+    .label {  
+      color: #39ff14;  
+      font-weight: bold;  
+    }  
+  
+    .pay-link {  
+      display: block;  
+      max-width: 320px;  
+      margin: 14px auto;  
+      padding: 15px;  
+      border-radius: 999px;  
+      border: 2px solid #39ff14;  
+      color: white;  
+      text-decoration: none;  
+      font-weight: bold;  
+      box-shadow: 0 0 12px #39ff14;  
+    }  
+  
+    .email-btn {  
+      display: block;  
+      max-width: 320px;  
+      margin: 18px auto;  
+      padding: 15px;  
+      background: #39ff14;  
+      color: black;  
+      border-radius: 12px;  
+      font-weight: bold;  
+      text-decoration: none;  
+    }  
+  
+    footer {  
+      color: #74ff74;  
+      padding: 32px 12px;  
+      border-top: 1px solid #143b14;  
+    }  
+  </style>  </head>  <body>  
+  <header>  
+    <h1>AFA Genetics</h1>  
+    <div class="tagline">Auto / Fem seed catalog • Fast Flowering section • Simple order flow</div>  
+  </header>    <nav class="nav">  
+    <a href="#search">Search</a>  
+    <a href="#autoFem">Auto / Fem</a>  
+    <a href="#fastFlower">Fast Flower</a>  
+    <a href="#pricing">Pricing</a>  
+    <a href="#order">Order</a>  
+  </nav>    <section id="search">  
+    <h2>Search Catalog</h2>  <div class="search-card">  
+  <input id="searchInput" type="text" placeholder="Search anything: F3, garlic, diesel, berry..." />  
+  <div id="letterFilters"></div>  
+  <button class="clear-btn" id="clearFilters">Clear Search</button>  
+  <div class="result-count" id="resultCount"></div>  
+</div>
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #000;
-      color: #fff;
-      text-align: center;
-    }
+  </section>    <section id="pricing">  
+    <h2>Pricing</h2>  
+    <div class="order-card">  
+      3 Pack — $25<br>  
+      5 Pack — $30<br>  
+      10 Pack — $50<br><br>  
+      <strong>Spring Special</strong><br>  
+      10 × 3-packs — $100<br><br>  
+      <strong>Shipping</strong><br>  
+      All orders add $10 shipping.  
+    </div>  
+  </section>    <section id="autoFem">  
+    <h2>Auto / Fem</h2>  
+    <div id="autoFemList"></div>  
+  </section>    <section id="fastFlower">  
+    <h2>⚡ Fast Flowering</h2>  
+    <div id="fastFlowerList"></div>  
+  </section>    <section id="order">  
+    <h2>How To Order</h2>  <div class="order-card">  
+  Send payment via Cash App or Venmo, then email your order with:  
+  <br><br>  
+  Strain names<br>  
+  Quantity<br>  
+  Shipping info  
+</div>  
 
-    header { padding: 30px 16px 15px; }
+<a class="pay-link" href="https://cash.app/$ChuckGermond" target="_blank">  
+  Cash App: $ChuckGermond  
+</a>  
 
-    h1 {
-      color: #39ff14;
-      font-size: 2.6rem;
-      margin: 0;
-      text-shadow: 0 0 14px #39ff14;
-    }
+<a class="pay-link" href="https://venmo.com/charles-Germond-1" target="_blank">  
+  Venmo: @charles-Germond-1  
+</a>  
 
-    .tagline { color: #ccc; margin-top: 8px; font-size: 1rem; }
+<a class="email-btn" href="mailto:bookingchuckeg@gmail.com?subject=AFA Genetics Order&body=Strain Name(s):%0A%0AQuantity:%0AShipping Info:%0A">  
+  Email Order  
+</a>
 
-    .nav {
-      padding: 12px;
-      position: sticky;
-      top: 0;
-      background: #000;
-      z-index: 10;
-      border-bottom: 1px solid #143b14;
-    }
-
-    .nav a, .letter-btn, .clear-btn {
-      display: inline-block;
-      color: #fff;
-      border: 1px solid #39ff14;
-      border-radius: 999px;
-      padding: 9px 13px;
-      margin: 5px;
-      text-decoration: none;
-      box-shadow: 0 0 8px #39ff14;
-      font-weight: bold;
-      font-size: 0.9rem;
-      background: #000;
-      cursor: pointer;
-    }
-
-    .letter-btn.active {
-      background: #39ff14;
-      color: #000;
-    }
-
-    section { padding: 22px 14px; }
-
-    h2 {
-      color: #39ff14;
-      font-size: 2rem;
-      margin: 20px 0;
-      text-shadow: 0 0 10px #39ff14;
-    }
-
-    .search-card, .order-card {
-      max-width: 720px;
-      margin: 14px auto;
-      padding: 18px;
-      border: 2px solid #39ff14;
-      border-radius: 18px;
-      background: #050505;
-      box-shadow: 0 0 12px #39ff14;
-      line-height: 1.5;
-    }
-
-    #searchInput {
-      width: calc(100% - 28px);
-      max-width: 650px;
-      padding: 14px;
-      border-radius: 12px;
-      border: 2px solid #39ff14;
-      background: #000;
-      color: #fff;
-      font-size: 1rem;
-      outline: none;
-      box-shadow: 0 0 8px #39ff14;
-    }
-
-    .result-count {
-      color: #aaa;
-      margin-top: 14px;
-      font-size: 0.95rem;
-    }
-
-    .strain-card {
-      max-width: 720px;
-      margin: 14px auto;
-      border: 2px solid #39ff14;
-      border-radius: 18px;
-      background: #050505;
-      box-shadow: 0 0 12px #39ff14;
-      overflow: hidden;
-      text-align: left;
-    }
-
-    .strain-img {
-      width: 100%;
-      display: block;
-      border-bottom: 1px solid #145214;
-    }
-
-    .strain-button {
-      width: 100%;
-      border: 0;
-      background: transparent;
-      color: #fff;
-      padding: 18px;
-      font-size: 1.15rem;
-      font-weight: bold;
-      text-align: left;
-      cursor: pointer;
-    }
-
-    .strain-button span {
-      color: #39ff14;
-      float: right;
-    }
-
-    .strain-details {
-      display: none;
-      padding: 0 18px 18px;
-      color: #ddd;
-      line-height: 1.45;
-      border-top: 1px solid #145214;
-    }
-
-    .strain-details p { margin: 9px 0; }
-
-    .label {
-      color: #39ff14;
-      font-weight: bold;
-    }
-  </style></head><body><header>
-  <h1>AFA Genetics</h1>
-  <div class="tagline">Auto / Fem seed catalog • Fast Flowering section • Simple order flow</div>
-</header><nav class="nav">
-  <a href="#search">Search</a>
-  <a href="#autoFem">Auto / Fem</a>
-  <a href="#fastFlower">Fast Flower</a>
-</nav><section id="search">
-  <h2>Search Catalog</h2>  <div class="search-card">
-    <input id="searchInput" type="text" placeholder="Search anything..." />
-    <div id="letterFilters"></div>
-    <button class="clear-btn" id="clearFilters">Clear</button>
-    <div class="result-count" id="resultCount"></div>
-  </div>
-</section><section id="autoFem">
-  <h2>Auto / Fem</h2>
-  <div id="autoFemList"></div>
-</section><section id="fastFlower">
-  <h2>⚡ Fast Flowering</h2>
-  <div id="fastFlowerList"></div>
-</section><script type="module">
-import strains from "./data/strains.js";
-
-const autoFemList = document.getElementById("autoFemList");
-const fastFlowerList = document.getElementById("fastFlowerList");
-const searchInput = document.getElementById("searchInput");
-const letterFilters = document.getElementById("letterFilters");
-const clearFilters = document.getElementById("clearFilters");
-const resultCount = document.getElementById("resultCount");
-
-let activeLetter = "All";
-
-const alphabet = ["All", ..."ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
-
-letterFilters.innerHTML = alphabet.map(letter =>
-  `<button class="letter-btn" data-letter="${letter}">${letter}</button>`
-).join("");
-
-// 🔥 AUTO IMAGE SYSTEM WITH PNG + JPEG SUPPORT
-function getImageHTML(name) {
-  const base = "/images/" +
-    name.toLowerCase()
-      .replace(/[^a-z0-9\s]/g, "")
-      .replace(/\s+/g, "-");
-
-  return `
-    <img src="${base}.jpeg" class="strain-img" alt="${name}"
-      onerror="this.onerror=null; this.src='${base}.png'; this.onerror=function(){this.style.display='none'};">
-  `;
-}
-
-function field(label, value) {
-  if (!value) return "";
-  return `<p><span class="label">${label}:</span> ${value}</p>`;
-}
-
-function renderStrain(strain) {
-  return `
-    <div class="strain-card">
-      ${getImageHTML(strain.name)}
-
-      <button class="strain-button">
-        ${strain.name}
-        <span>+</span>
-      </button>
-
-      <div class="strain-details">
-        ${field("Type", strain.type)}
-        ${field("Lineage", strain.lineage)}
-        ${field("Dominance", strain.dominance)}
-        ${field("Flower Time", strain.time)}
-        ${field("Terpenes", strain.terpenes)}
-        ${field("Flavor", strain.flavor)}
-        ${field("Effects", strain.effects)}
-      </div>
-    </div>
-  `;
-}
-
-function filterList(list) {
-  const query = searchInput.value.toLowerCase();
-  return list.filter(strain =>
-    (!query || JSON.stringify(strain).toLowerCase().includes(query)) &&
-    (activeLetter === "All" || strain.name.toUpperCase().startsWith(activeLetter))
-  );
-}
-
-function renderAll() {
-  const filteredAuto = filterList(strains.autoFem || []);
-  const filteredFast = filterList(strains.fastFlower || []);
-
-  autoFemList.innerHTML = filteredAuto.map(renderStrain).join("");
-  fastFlowerList.innerHTML = filteredFast.map(renderStrain).join("");
-
-  resultCount.textContent = `Showing ${filteredAuto.length + filteredFast.length} results`;
-}
-
-searchInput.addEventListener("input", renderAll);
-
-letterFilters.addEventListener("click", e => {
-  if (!e.target.matches(".letter-btn")) return;
-  activeLetter = e.target.dataset.letter;
-  renderAll();
-});
-
-clearFilters.addEventListener("click", () => {
-  searchInput.value = "";
-  activeLetter = "All";
-  renderAll();
-});
-
-renderAll();
-</script></body>
+  </section>    <footer>  
+    AFA Genetics<br>  
+    Collector / novelty seed catalog  
+  </footer>    <script type="module">  
+    import strains from "./data/strains.js";  
+    import strainImages from "./data/strainImages.js";  
+  
+    const autoFemList = document.getElementById("autoFemList");  
+    const fastFlowerList = document.getElementById("fastFlowerList");  
+    const searchInput = document.getElementById("searchInput");  
+    const letterFilters = document.getElementById("letterFilters");  
+    const clearFilters = document.getElementById("clearFilters");  
+    const resultCount = document.getElementById("resultCount");  
+  
+    const savedSearch = localStorage.getItem("afaSearch") || "";  
+    const savedLetter = localStorage.getItem("afaLetter") || "All";  
+  
+    let activeLetter = savedLetter;  
+    searchInput.value = savedSearch;  
+  
+    const alphabet = ["All", ..."ABCDEFGHIJKLMNOPQRSTUVWXYZ"];  
+  
+    letterFilters.innerHTML = alphabet  
+      .map(letter => `<button class="letter-btn" data-letter="${letter}">${letter}</button>`)  
+      .join("");  
+  
+    function field(label, value) {  
+      if (!value) return "";  
+      return `<p><span class="label">${label}:</span> ${value}</p>`;  
+    }  
+  
+    function getImagePath(strain) {  
+      const rawImage = strainImages[strain.name];  
+      if (!rawImage) return "";  
+  
+      if (rawImage.startsWith("/images/")) {  
+        return `/public${rawImage}`;  
+      }  
+  
+      return rawImage;  
+    }  
+  
+    function renderStrain(strain) {  
+      const image = getImagePath(strain);  
+  
+      return `  
+        <div class="strain-card">  
+          ${image ? `<img src="${image}" class="strain-img" alt="${strain.name}" onerror="this.style.display='none'">` : ""}  
+  
+          <button class="strain-button">  
+            ${strain.name}  
+            <span>+</span>  
+          </button>  
+  
+          <div class="strain-details">  
+            ${field("Type", strain.type || "Auto Fem")}  
+            ${field("Lineage", strain.lineage)}  
+            ${field("Dominance", strain.dominance)}  
+            ${field("THC", strain.thc)}  
+            ${field("Ease", strain.ease)}  
+            ${field("Yield", strain.yield)}  
+            ${field("Flower Time", strain.time)}  
+            ${field("Terpenes", strain.terpenes)}  
+            ${field("Flavor", strain.flavor)}  
+            ${field("Effects", strain.effects)}  
+            ${field("Note", strain.note)}  
+          </div>  
+        </div>  
+      `;  
+    }  
+  
+    function searchableText(strain) {  
+      return [  
+        strain.name,  
+        strain.type,  
+        strain.lineage,  
+        strain.dominance,  
+        strain.thc,  
+        strain.ease,  
+        strain.yield,  
+        strain.time,  
+        strain.terpenes,  
+        strain.flavor,  
+        strain.effects,  
+        strain.note  
+      ].filter(Boolean).join(" ").toLowerCase();  
+    }  
+  
+    function filterList(list) {  
+      const query = searchInput.value.trim().toLowerCase();  
+  
+      return list.filter(strain => {  
+        const matchesSearch = !query || searchableText(strain).includes(query);  
+        const matchesLetter = activeLetter === "All" || strain.name.toUpperCase().startsWith(activeLetter);  
+        return matchesSearch && matchesLetter;  
+      });  
+    }  
+  
+    function bindCardClicks() {  
+      document.querySelectorAll(".strain-button").forEach((button) => {  
+        button.addEventListener("click", () => {  
+          const details = button.nextElementSibling;  
+          const icon = button.querySelector("span");  
+          const open = details.style.display === "block";  
+  
+          details.style.display = open ? "none" : "block";  
+          icon.textContent = open ? "+" : "−";  
+        });  
+      });  
+    }  
+  
+    function updateActiveButton() {  
+      document.querySelectorAll(".letter-btn").forEach(button => {  
+        button.classList.toggle("active", button.dataset.letter === activeLetter);  
+      });  
+    }  
+  
+    function renderAll() {  
+      const filteredAuto = filterList(strains.autoFem || []);  
+      const filteredFast = filterList(strains.fastFlower || []);  
+  
+      autoFemList.innerHTML = filteredAuto.map(renderStrain).join("");  
+      fastFlowerList.innerHTML = filteredFast.map(renderStrain).join("");  
+  
+      const total = filteredAuto.length + filteredFast.length;  
+      resultCount.textContent = `Showing ${total} result${total === 1 ? "" : "s"}`;  
+  
+      updateActiveButton();  
+      bindCardClicks();  
+    }  
+  
+    letterFilters.addEventListener("click", (event) => {  
+      if (!event.target.matches(".letter-btn")) return;  
+  
+      activeLetter = event.target.dataset.letter;  
+      localStorage.setItem("afaLetter", activeLetter);  
+      renderAll();  
+    });  
+  
+    searchInput.addEventListener("input", () => {  
+      activeLetter = "All";  
+      localStorage.setItem("afaSearch", searchInput.value);  
+      localStorage.setItem("afaLetter", activeLetter);  
+      renderAll();  
+    });  
+  
+    clearFilters.addEventListener("click", () => {  
+      searchInput.value = "";  
+      activeLetter = "All";  
+      localStorage.removeItem("afaSearch");  
+      localStorage.removeItem("afaLetter");  
+      renderAll();  
+    });  
+  
+    renderAll();  
+  </script>  </body>  
 </html>
