@@ -1,4 +1,8 @@
 const strainImages = {
+  "Monkey Business F3": "/images/monkey-business-f3.jpeg",
+"Arctic Blast": "/images/arctic-blast.jpeg",
+"91 Monkeys": "/images/91-monkeys.jpeg",
+"Exotic Monkey Truffles": "/images/exotic-monkey-truffles.jpeg",
   "Punch-a-Tula Bliss": "/images/punch-a-tula-bliss.jpeg",
   "Oreo Frosting": "/images/oreo-frosting.jpeg",
 "Italian Lemon Drop Cookies": "/images/italian-lemon-drop-cookies.jpeg",
