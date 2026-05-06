@@ -1,4 +1,6 @@
 const strainImages = {
+  "Grapefruit Sour Diesel": "/images/grapefruit-sour-diesel.png",
+"Rickie Bobbie": "/images/rickie-bobbie.png",
   "Margarita Wedding": "/images/margarita-wedding.png",
 "Ruby Red": "/images/ruby-red.png",
 "Hunch Punch": "/images/hunch-punch.png",
