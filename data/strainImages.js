@@ -1,4 +1,13 @@
 const strainImages = {
+  "Freezer Burnt": "/images/freezer-burnt.jpeg",
+"Sugar Rush": "/images/sugar-rush.jpeg",
+"Drunken Master": "/images/drunken-master.jpeg",
+"Arabian Nights": "/images/arabian-nights.jpeg",
+"Italian Ice": "/images/italian-ice.jpeg",
+"Gelato Miss Ooh": "/images/gelato-miss-ooh.jpeg",
+"Matchmaker": "/images/matchmaker.jpeg",
+"Birthday Cake Gelato": "/images/birthday-cake-gelato.jpeg",
+"Gorilla Snacks": "/images/gorilla-snacks.jpeg",
   "Cowboy Cookies": "/images/cowboy-cookies.jpeg",
 "Sherb Cookies": "/images/sherb-cookies.jpeg",
 "Cookie Breath F3": "/images/cookie-breath-f3.jpeg",
