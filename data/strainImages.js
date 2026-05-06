@@ -1,4 +1,9 @@
 const strainImages = {
+  "Cowboy Cookies": "/images/cowboy-cookies.jpeg",
+"Sherb Cookies": "/images/sherb-cookies.jpeg",
+"Cookie Breath F3": "/images/cookie-breath-f3.jpeg",
+"Rainbow Sprinkles": "/images/rainbow-sprinkles.jpeg",
+"Schmuckleberry Cookies": "/images/schmuckleberry-cookies.jpeg",
   "Jogi Diamonds": "/images/jogi-diamonds.jpeg",
   "Frosty Mac Alien Crumbs": "/images/frosty-mac-alien-crumbs.png",
 "Super OG": "/images/super-og.jpeg",
