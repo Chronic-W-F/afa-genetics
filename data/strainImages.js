@@ -1,4 +1,13 @@
 const strainImages = {
+  "The Finisher": "/images/the-finisher.png",
+"Slurri Sundae": "/images/slurri-sundae.png",
+"Pop Rocks": "/images/pop-rocks.png",
+"El Frost Monster F2": "/images/el-frost-monster-f2.png",
+"El Misfits": "/images/el-misfits.png",
+"Monster Squad": "/images/monster-squad.png",
+"Grave Digger": "/images/grave-digger.png",
+"Forgetful Cherries": "/images/forgetful-cherries.png",
+"Quantum Leap": "/images/quantum-leap.png",
   "Pappy's Breath F2": "/images/pappy's-breath-f2.png",
   "Cream Sickle Dream": "/images/cream-sickle-dream.png",
   "Jogi 51": "/images/jogi-51.png",
