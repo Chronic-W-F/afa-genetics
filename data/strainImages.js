@@ -1,4 +1,6 @@
 const strainImages = {
+  "Creamy Garlic": "/images/creamy-garlic.png",
+"Garlic Breath": "/images/garlic-breath.png",
   "Pappy's Breath": "/images/pappy's-breath.png",
 "Knockout OG": "/images/knockout-og.png",
   "Titan's Kiss": "/images/titan's-kiss.png",
