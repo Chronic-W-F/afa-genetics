@@ -1,4 +1,7 @@
 const strainImages = {
+  "Crazy Vanilla": "/images/crazy-vanilla.png",
+"Cherry Freeze Pop": "/images/cherry-freeze-pop.png",
+"Rotten Grapes": "/images/rotten-grapes.png",
   "The Finisher": "/images/the-finisher.png",
 "Slurri Sundae": "/images/slurri-sundae.png",
 "Pop Rocks": "/images/pop-rocks.png",
