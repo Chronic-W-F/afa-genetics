@@ -1,4 +1,8 @@
 const strainImages = {
+  "Cookie Breath": "/images/cookie-breath.png",
+"Martian Breath": "/images/martian-breath.png",
+"Monkey Breath": "/images/monkey-breath.png",
+"Booger Breath": "/images/booger-breath.png",
   "Crazy Vanilla": "/images/crazy-vanilla.png",
 "Cherry Freeze Pop": "/images/cherry-freeze-pop.png",
 "Rotten Grapes": "/images/rotten-grapes.png",
