@@ -1,4 +1,5 @@
 const strainImages = {
+  "Jogi Diamonds": "/images/jogi-diamonds.jpeg",
   "Frosty Mac Alien Crumbs": "/images/frosty-mac-alien-crumbs.png",
 "Super OG": "/images/super-og.jpeg",
   "Cherry Vanilla Sundae": "/images/cherry-vanilla-sundae.jpeg",
