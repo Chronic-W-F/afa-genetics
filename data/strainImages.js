@@ -1,4 +1,9 @@
 const strainImages = {
+  "Bipolar Bissell": "/images/bipolar-bissell.png",
+"JOGI OGF2": "/images/jogi-ogf2.png",
+"Frosted Terps": "/images/frosted-terps.png",
+"El Frost Monster": "/images/el-frost-monster.png",
+"Kamikaze": "/images/kamikaze.png",
   "Show Me Garlic": "/images/show-me-garlic.png",
   "Grapefruit Sour Diesel": "/images/grapefruit-sour-diesel.png",
 "Rickie Bobbie": "/images/rickie-bobbie.png",
