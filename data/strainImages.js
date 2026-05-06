@@ -1,4 +1,8 @@
 const strainImages = {
+  "Margarita Wedding": "/images/margarita-wedding.png",
+"Ruby Red": "/images/ruby-red.png",
+"Hunch Punch": "/images/hunch-punch.png",
+"Glacier Gas": "/images/glacier-gas.png",
   "Cookie Breath": "/images/cookie-breath.png",
 "Martian Breath": "/images/martian-breath.png",
 "Monkey Breath": "/images/monkey-breath.png",
