@@ -2,7 +2,7 @@ const strainImages = {
   "Oreo Frosting": "/images/oreo-frosting.jpeg",
 "Italian Lemon Drop Cookies": "/images/italian-lemon-drop-cookies.jpeg",
 "Brain Freeze": "/images/brain-freeze.jpeg",
-"Santa's Sour": "/images/santas-sour.jpeg",
+"Santa's Sour": "/images/santa's-sour.jpeg",
 "Silent Nights": "/images/silent-nights.jpeg",
 "Sour Trix": "/images/sour-trix.jpeg",
 "Space Cookies": "/images/space-cookies.jpeg",
