@@ -1,5 +1,5 @@
 const strainImages = {
-  "Pappy's Breath": "/images/pappys-breath.png",
+  "Pappy's Breath": "/images/pappy's-breath.png",
 "Knockout OG": "/images/knockout-og.png",
   "Titan's Kiss": "/images/titan's-kiss.png",
   "Whirlwind Cookies": "/images/whirlwind-cookies.png",
