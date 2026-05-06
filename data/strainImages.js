@@ -1,4 +1,5 @@
 const strainImages = {
+  "Titan's Kiss": "/images/titans-kiss.png",
   "Whirlwind Cookies": "/images/whirlwind-cookies.png",
   "Black Cherry Sour D F3": "/images/black-cherry-sour-d-f3.png",
   "Brain Teaser": "/images/brain-teaser.png",
