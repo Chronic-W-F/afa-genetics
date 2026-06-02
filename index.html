@@ -464,15 +464,15 @@
     }
 
     function getImagePath(strain) {
-      const rawImage = strainImages[strain.name];
-      if (!rawImage) return "";
+  const rawImage = strainImages[strain.name];
+  if (!rawImage) return "";
 
-      if (rawImage.startsWith("/images/")) {
-        return rawImage;
-      }
+  if (rawImage.startsWith("/images/")) {
+    return `/public${rawImage}`;
+  }
 
-      return rawImage;
-    }
+  return rawImage;
+}
 
     function renderStrain(strain) {
       const image = getImagePath(strain);
