@@ -17,16 +17,17 @@
       padding-bottom: 90px;
     }
 
-    header { padding: 30px 16px 15px; }
-
-    h1 {
-      color: #39ff14;
-      font-size: 2.6rem;
-      margin: 0;
-      text-shadow: 0 0 14px #39ff14;
+    header {
+      padding: 0;
+      background: #000;
     }
 
-    .tagline { color: #ccc; margin-top: 8px; font-size: 1rem; }
+    .hero-banner {
+      width: 100%;
+      max-width: 1000px;
+      display: block;
+      margin: 0 auto;
+    }
 
     .nav {
       padding: 12px;
@@ -321,8 +322,7 @@
 
 <body>
   <header>
-    <h1>AFA Genetics</h1>
-    <div class="tagline">Auto / Fem seed catalog • Fast Flowering section • Simple order flow</div>
+    <img src="/images/banner.png" alt="AFA Genetics Banner" class="hero-banner">
   </header>
 
   <nav class="nav">
@@ -374,9 +374,7 @@
 
     <div class="order-card">
       <div id="cartItems"></div>
-
       <div id="cartTotals"></div>
-
       <button class="clear-cart-btn" id="clearCartBtn">Clear Order</button>
     </div>
 
@@ -470,7 +468,7 @@
       if (!rawImage) return "";
 
       if (rawImage.startsWith("/images/")) {
-        return `/public${rawImage}`;
+        return rawImage;
       }
 
       return rawImage;
