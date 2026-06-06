@@ -1075,7 +1075,7 @@ const strains = {
       name: "Hunch Punch F2",
       type: "Auto Fem",
       lineage: "Blackberry x Skunk x GMO8"
-    }
+    },
     {
   name: "Tropicana Cherry",
   type: "Auto Fem",
@@ -1240,7 +1240,7 @@ const strains = {
       lineage: "Hollywood Roadkill x Monkey Breath",
       flavor: "Skunk, garlic, kush",
       time: "5.5-7 weeks"
-    }
+    },
   {
   name: "Lion Fuel",
   type: "Fast Flower",
