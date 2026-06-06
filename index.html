@@ -330,6 +330,7 @@
     <a href="#search">Search</a>
     <a href="#autoFem">Auto / Fem</a>
     <a href="#fastFlower">Fast Flower</a>
+    <a href="#juneDrop">June '26</a>
     <a href="#order">Order</a>
   </nav>
 
@@ -367,6 +368,11 @@
   <section id="fastFlower">
     <h2>⚡ Fast Flowering</h2>
     <div id="fastFlowerList"></div>
+  </section>
+
+  <section id="juneDrop">
+    <h2>🔥 June '26 Drop</h2>
+    <div id="juneDropList"></div>
   </section>
 
   <section id="order">
@@ -414,6 +420,7 @@
 
     const autoFemList = document.getElementById("autoFemList");
     const fastFlowerList = document.getElementById("fastFlowerList");
+    const juneDropList = document.getElementById("juneDropList");
     const searchInput = document.getElementById("searchInput");
     const letterFilters = document.getElementById("letterFilters");
     const clearFilters = document.getElementById("clearFilters");
@@ -464,15 +471,15 @@
     }
 
     function getImagePath(strain) {
-  const rawImage = strainImages[strain.name];
-  if (!rawImage) return "";
+      const rawImage = strain.image || strainImages[strain.name];
+      if (!rawImage) return "";
 
-  if (rawImage.startsWith("/images/")) {
-    return `/public${rawImage}`;
-  }
+      if (rawImage.startsWith("/images/")) {
+        return `/public${rawImage}`;
+      }
 
-  return rawImage;
-}
+      return rawImage;
+    }
 
     function renderStrain(strain) {
       const image = getImagePath(strain);
@@ -490,6 +497,7 @@
 
           <div class="strain-details">
             ${field("Type", strain.type || "Auto Fem")}
+            ${field("Drop", strain.drop)}
             ${field("Lineage", strain.lineage)}
             ${field("Dominance", strain.dominance)}
             ${field("THC", strain.thc)}
@@ -499,6 +507,7 @@
             ${field("Terpenes", strain.terpenes)}
             ${field("Flavor", strain.flavor)}
             ${field("Effects", strain.effects)}
+            ${field("Description", strain.description)}
             ${field("Note", strain.note)}
 
             <div class="pack-buttons">
@@ -521,6 +530,7 @@
       return [
         strain.name,
         strain.type,
+        strain.drop,
         strain.lineage,
         strain.dominance,
         strain.thc,
@@ -530,6 +540,7 @@
         strain.terpenes,
         strain.flavor,
         strain.effects,
+        strain.description,
         strain.note
       ].filter(Boolean).join(" ").toLowerCase();
     }
@@ -732,14 +743,32 @@
       });
     }
 
+    function getJuneDropStrains() {
+      const juneAuto = (strains.autoFem || []).filter(
+        strain => strain.drop === "June 2026"
+      );
+
+      const juneFast = (strains.fastFlower || []).filter(
+        strain => strain.drop === "June 2026"
+      );
+
+      return [...juneAuto, ...juneFast];
+    }
+
     function renderAll() {
       const filteredAuto = filterList(strains.autoFem || []);
       const filteredFast = filterList(strains.fastFlower || []);
+      const filteredJune = filterList(getJuneDropStrains());
 
       autoFemList.innerHTML = filteredAuto.map(renderStrain).join("");
       fastFlowerList.innerHTML = filteredFast.map(renderStrain).join("");
+      juneDropList.innerHTML = filteredJune.map(renderStrain).join("");
 
-      const total = filteredAuto.length + filteredFast.length;
+      const total =
+        filteredAuto.length +
+        filteredFast.length +
+        filteredJune.length;
+
       resultCount.textContent = `Showing ${total} result${total === 1 ? "" : "s"}`;
 
       updateActiveButton();
