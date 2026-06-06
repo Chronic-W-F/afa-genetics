@@ -127,6 +127,25 @@ const strainImages = {
   "London Frost": "/images/london-frost.jpeg",
   "Wave Runner": "/images/wave-runner.jpeg",
   "Gorilla Kush": "/images/gorilla-kush.jpeg",
+"Tropicana Cherry": "/images/tropicana-cherry.png",
+"Midnight Cherries": "/images/midnight-cherries.png",
+"Scrambled Chaos": "/images/scrambled-chaos.jpeg",
+"Code Breaker": "/images/code-breaker.jpeg",
+"Donut Cookies": "/images/donut-cookies.png",
+"Cherry Berry Blast": "/images/cherry-berry-blast.png",
+"Tropical Gorilla": "/images/tropical-gorilla.png",
+
+"Apple Muffins": "/images/apple-muffins.jpeg",
+"Sour Kushberry": "/images/sour-kushberry.jpeg",
+"Luscious Melon": "/images/luscious-melon.png",
+"Candy Paint": "/images/candy-paint.jpeg",
+"Galactic Jelly": "/images/galactic-jelly.png",
+"The Schwartz": "/images/the-schwartz.png",
+"Arabian Apples": "/images/arabian-apples.png",
+
+"Lion Fuel": "/images/lion-fuel.jpeg",
+"Frozen Fury": "/images/frozen-fury.jpeg",
+"Phantom Eclipse": "/images/phantom-eclipse.jpeg",
 };
 
 export default strainImages;
