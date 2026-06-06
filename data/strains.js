@@ -1076,6 +1076,140 @@ const strains = {
       type: "Auto Fem",
       lineage: "Blackberry x Skunk x GMO8"
     }
+    {
+  name: "Tropicana Cherry",
+  type: "Auto Fem",
+  drop: "June 2026",
+  image: "/images/tropicana-cherry.png",
+  lineage: "Tropicana Cookies x Tropicana Cherry x Tropicana Cookies",
+  thc: "29.8%",
+  terpenes: "Limonene, Caryophyllene, Myrcene",
+  flavor: "Bright tropical citrus, sweet cherry candy, warm cookie dough"
+},
+{
+  name: "Midnight Cherries",
+  type: "Auto Fem",
+  drop: "June 2026",
+  image: "/images/midnight-cherries.png",
+  lineage: "Cherry Cola R3 x Burgundy Cherry x Forgetful Cherries",
+  thc: "28.7%",
+  terpenes: "Limonene, Caryophyllene, Myrcene",
+  flavor: "Dark cherry cola, sweet berry candy, subtle earthy spice"
+},
+{
+  name: "Scrambled Chaos",
+  type: "Auto Fem",
+  drop: "June 2026",
+  image: "/images/scrambled-chaos.jpeg",
+  lineage: "Whiskey Zulu x Wave Runner x London Pound Cake",
+  thc: "30.4%",
+  terpenes: "Caryophyllene, Limonene, Myrcene",
+  flavor: "Sweet berry cake, citrus zest, creamy vanilla with earthy undertones"
+},
+{
+  name: "Code Breaker",
+  type: "Auto Fem",
+  drop: "June 2026",
+  image: "/images/code-breaker.jpeg",
+  lineage: "Headband x Tropicana Cookies x Animal Mints",
+  thc: "31.2%",
+  terpenes: "Caryophyllene, Limonene, Myrcene",
+  flavor: "Spicy mint, sweet citrus cookies, earthy diesel"
+},
+{
+  name: "Donut Cookies",
+  type: "Auto Fem",
+  drop: "June 2026",
+  image: "/images/donut-cookies.png",
+  lineage: "Jelly Donuts x Burgundy Cherry x Papaya Cookies",
+  thc: "29.1%",
+  terpenes: "Limonene, Caryophyllene, Myrcene",
+  flavor: "Sweet jelly donut, ripe cherry, tropical papaya with creamy cookie finish"
+},
+{
+  name: "Cherry Berry Blast",
+  type: "Auto Fem",
+  drop: "June 2026",
+  image: "/images/cherry-berry-blast.png",
+  lineage: "Midnight Cherries x OG Kush Mints x Cherry Cola R3",
+  thc: "30.8%",
+  terpenes: "Limonene, Caryophyllene, Myrcene",
+  flavor: "Explosive cherry, sweet berry, fizzy cola with minty kush undertones"
+},
+{
+  name: "Tropical Gorilla",
+  type: "Auto Fem",
+  drop: "June 2026",
+  image: "/images/tropical-gorilla.png",
+  lineage: "MGK Auto x Tropicana Cookies x Gorilla Kush",
+  thc: "32.1%",
+  terpenes: "Limonene, Caryophyllene, Myrcene",
+  flavor: "Sweet tropical pineapple, bright citrus, earthy gorilla funk"
+},
+{
+  name: "Apple Muffins",
+  type: "Auto Fem",
+  drop: "June 2026",
+  image: "/images/apple-muffins.jpeg",
+  lineage: "Blueberry Muffins × Apple Fritter × Sweet & Sour Apple",
+  terpenes: "Myrcene, Caryophyllene, Limonene, Pinene",
+  flavor: "Fresh baked apple muffin, tart green apple, creamy vanilla, warm cinnamon"
+},
+{
+  name: "Sour Kushberry",
+  type: "Auto Fem",
+  drop: "June 2026",
+  image: "/images/sour-kushberry.jpeg",
+  lineage: "Grape Walker Kush × Apple Fritter × Fukawi Sour",
+  terpenes: "Caryophyllene, Myrcene, Limonene",
+  flavor: "Sour grape candy, tart green apple, deep kush earth"
+},
+{
+  name: "Luscious Melon",
+  type: "Auto Fem",
+  drop: "June 2026",
+  image: "/images/luscious-melon.png",
+  lineage: "Sha Sha Sherb × Apple Muffins × Cantaloupe Kush",
+  terpenes: "Limonene, Myrcene, Linalool",
+  flavor: "Ripe cantaloupe, creamy sherbet, baked apple pastry"
+},
+{
+  name: "Candy Paint",
+  type: "Auto Fem",
+  drop: "June 2026",
+  image: "/images/candy-paint.jpeg",
+  lineage: "Sugar Rush × Sour Apple × Apple Muffins",
+  terpenes: "Limonene, Caryophyllene, Myrcene",
+  flavor: "Sweet candy shell, puckering sour apple, sugary muffin dough"
+},
+{
+  name: "Galactic Jelly",
+  type: "Auto Fem",
+  drop: "June 2026",
+  image: "/images/galactic-jelly.png",
+  lineage: "Moon Oreos × Apple Fritter × Jelly Donut",
+  terpenes: "Caryophyllene, Limonene, Humulene",
+  flavor: "Sweet jelly-filled donut, creamy cookies and cream, fried dough"
+},
+{
+  name: "The Schwartz",
+  type: "Auto Fem",
+  drop: "June 2026",
+  image: "/images/the-schwartz.png",
+  lineage: "Galaxy Brain × Apple Muffins × Brain Freeze",
+  terpenes: "Myrcene, Pinene, Limonene",
+  flavor: "Sweet baked apple, creamy muffin, icy fruit punch"
+},
+{
+  name: "Arabian Apples",
+  type: "Auto Fem",
+  drop: "June 2026",
+  image: "/images/arabian-apples.png",
+  lineage: "Arabian Nights × Sour Apple × Gorilla Kush",
+  thc: "29-30%",
+  terpenes: "Earthy cinnamon apple bran muffin with an Apple Jax twist",
+  flavor: "Tart green apple, exotic spices, deep earthy kush"
+},
   ],
 
   fastFlower: [
