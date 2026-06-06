@@ -1241,6 +1241,39 @@ const strains = {
       flavor: "Skunk, garlic, kush",
       time: "5.5-7 weeks"
     }
+  {
+  name: "Lion Fuel",
+  type: "Fast Flower",
+  drop: "June 2026",
+  image: "/images/lion-fuel.jpeg",
+  lineage: "Tropicana Cherry Auto x Nine Lions",
+  terpenes: "Berry Gas Diesel Menthol",
+  flavor: "Sweet berry tart, cherry cola, thick diesel gas, peppery spice, icy menthol-diesel",
+  description: "Lion Fuel is a straight-up badass. Loud, gassy, berry-sweet with that signature menthol-diesel kick.",
+  time: "Fast Flower"
+},
+{
+  name: "Frozen Fury",
+  type: "Fast Flower",
+  drop: "June 2026",
+  image: "/images/frozen-fury.jpeg",
+  lineage: "Frozen Bag #19 F2 x Gorilla Glue #4",
+  terpenes: "Lime Gas Frosted Diesel",
+  flavor: "Bright lime zest, sweet candy, thick gassy diesel, peppery spice, earthy frost",
+  description: "Frozen Fury is a straight beast — loud lime gas with serious frost and glue power.",
+  time: "Fast Flower"
+},
+{
+  name: "Phantom Eclipse",
+  type: "Fast Flower",
+  drop: "June 2026",
+  image: "/images/phantom-eclipse.jpeg",
+  lineage: "Gary Payton x Fish Scale x Grandpa's Stash #10 x OG Kush Mintz Auto",
+  terpenes: "Orange Citrus Burnt Rubber Funk",
+  flavor: "Sweet orange candy, citrus peel, burnt rubber, spicy gas, funky orange diesel",
+  description: "Phantom Eclipse is a straight menace — dark, loud, and powerful.",
+  time: "Fast Flower"
+},
   ]
 };
 
