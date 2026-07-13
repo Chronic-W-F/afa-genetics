@@ -1,81 +1,81 @@
 const strainImages = {
   "Bipolar Bissell": "/images/bipolar-bissell.png",
-"JOGI OGF2": "/images/jogi-ogf2.png",
-"Frosted Terps": "/images/frosted-terps.png",
-"El Frost Monster": "/images/el-frost-monster.png",
-"Kamikaze": "/images/kamikaze.png",
+  "JOGI OGF2": "/images/jogi-ogf2.png",
+  "Frosted Terps": "/images/frosted-terps.png",
+  "El Frost Monster": "/images/el-frost-monster.png",
+  "Kamikaze": "/images/kamikaze.png",
   "Show Me Garlic": "/images/show-me-garlic.png",
   "Grapefruit Sour Diesel": "/images/grapefruit-sour-diesel.png",
-"Rickie Bobbie": "/images/rickie-bobbie.png",
+  "Rickie Bobbie": "/images/rickie-bobbie.png",
   "Margarita Wedding": "/images/margarita-wedding.png",
-"Ruby Red": "/images/ruby-red.png",
-"Hunch Punch": "/images/hunch-punch.png",
-"Glacier Gas": "/images/glacier-gas.png",
+  "Ruby Red": "/images/ruby-red.png",
+  "Hunch Punch": "/images/hunch-punch.png",
+  "Glacier Gas": "/images/glacier-gas.png",
   "Cookie Breath": "/images/cookie-breath.png",
-"Martian Breath": "/images/martian-breath.png",
-"Monkey Breath": "/images/monkey-breath.png",
-"Booger Breath": "/images/booger-breath.png",
+  "Martian Breath": "/images/martian-breath.png",
+  "Monkey Breath": "/images/monkey-breath.png",
+  "Booger Breath": "/images/booger-breath.png",
   "Crazy Vanilla": "/images/crazy-vanilla.png",
-"Cherry Freeze Pop": "/images/cherry-freeze-pop.png",
-"Rotten Grapes": "/images/rotten-grapes.png",
+  "Cherry Freeze Pop": "/images/cherry-freeze-pop.png",
+  "Rotten Grapes": "/images/rotten-grapes.png",
   "The Finisher": "/images/the-finisher.png",
-"Slurri Sundae": "/images/slurri-sundae.png",
-"Pop Rocks": "/images/pop-rocks.png",
-"El Frost Monster F2": "/images/el-frost-monster-f2.png",
-"El Misfits": "/images/el-misfits.png",
-"Monster Squad": "/images/monster-squad.png",
-"Grave Digger": "/images/grave-digger.png",
-"Forgetful Cherries": "/images/forgetful-cherries.png",
-"Quantum Leap": "/images/quantum-leap.png",
+  "Slurri Sundae": "/images/slurri-sundae.png",
+  "Pop Rocks": "/images/pop-rocks.png",
+  "El Frost Monster F2": "/images/el-frost-monster-f2.png",
+  "El Misfits": "/images/el-misfits.png",
+  "Monster Squad": "/images/monster-squad.png",
+  "Grave Digger": "/images/grave-digger.png",
+  "Forgetful Cherries": "/images/forgetful-cherries.png",
+  "Quantum Leap": "/images/quantum-leap.png",
   "Pappy's Breath F2": "/images/pappy's-breath-f2.png",
   "Cream Sickle Dream": "/images/cream-sickle-dream.png",
   "Jogi 51": "/images/jogi-51.png",
   "Creamy Garlic": "/images/creamy-garlic.png",
-"Garlic Breath": "/images/garlic-breath.png",
+  "Garlic Breath": "/images/garlic-breath.png",
   "Pappy's Breath": "/images/pappy's-breath.png",
-"Knockout OG": "/images/knockout-og.png",
+  "Knockout OG": "/images/knockout-og.png",
   "Titan's Kiss": "/images/titan's-kiss.png",
   "Whirlwind Cookies": "/images/whirlwind-cookies.png",
   "Black Cherry Sour D F3": "/images/black-cherry-sour-d-f3.png",
   "Brain Teaser": "/images/brain-teaser.png",
   "Moneymaker": "/images/moneymaker.png",
   "Monkey Business F3": "/images/monkey-business-f3.jpeg",
-"Arctic Blast": "/images/arctic-blast.jpeg",
-"91 Monkeys": "/images/91-monkeys.jpeg",
-"Exotic Monkey Truffles": "/images/exotic-monkey-truffles.jpeg",
+  "Arctic Blast": "/images/arctic-blast.jpeg",
+  "91 Monkeys": "/images/91-monkeys.jpeg",
+  "Exotic Monkey Truffles": "/images/exotic-monkey-truffles.jpeg",
   "Punch-a-Tula Bliss": "/images/punch-a-tula-bliss.jpeg",
   "Oreo Frosting": "/images/oreo-frosting.jpeg",
-"Italian Lemon Drop Cookies": "/images/italian-lemon-drop-cookies.jpeg",
-"Brain Freeze": "/images/brain-freeze.jpeg",
-"Santa's Sour": "/images/santa's-sour.jpeg",
-"Silent Nights": "/images/silent-nights.jpeg",
-"Sour Trix": "/images/sour-trix.jpeg",
-"Space Cookies": "/images/space-cookies.jpeg",
-"Sky Ice": "/images/sky-ice.jpeg",
-"Hunch Punch F3": "/images/hunch-punch-f3.jpeg",
+  "Italian Lemon Drop Cookies": "/images/italian-lemon-drop-cookies.jpeg",
+  "Brain Freeze": "/images/brain-freeze.jpeg",
+  "Santa's Sour": "/images/santa's-sour.jpeg",
+  "Silent Nights": "/images/silent-nights.jpeg",
+  "Sour Trix": "/images/sour-trix.jpeg",
+  "Space Cookies": "/images/space-cookies.jpeg",
+  "Sky Ice": "/images/sky-ice.jpeg",
+  "Hunch Punch F3": "/images/hunch-punch-f3.jpeg",
   "Grapefruit Sour D F3": "/images/grapefruit-sour-d-f3.jpeg",
   "Freezer Burnt": "/images/freezer-burnt.jpeg",
-"Sugar Rush": "/images/sugar-rush.jpeg",
-"Drunken Master": "/images/drunken-master.jpeg",
-"Arabian Nights": "/images/arabian-nights.jpeg",
-"Italian Ice": "/images/italian-ice.jpeg",
-"Gelato Miss Ooh": "/images/gelato-miss-ooh.jpeg",
-"Matchmaker": "/images/matchmaker.jpeg",
-"Birthday Cake Gelato": "/images/birthday-cake-gelato.jpeg",
-"Gorilla Snacks": "/images/gorilla-snacks.jpeg",
+  "Sugar Rush": "/images/sugar-rush.jpeg",
+  "Drunken Master": "/images/drunken-master.jpeg",
+  "Arabian Nights": "/images/arabian-nights.jpeg",
+  "Italian Ice": "/images/italian-ice.jpeg",
+  "Gelato Miss Ooh": "/images/gelato-miss-ooh.jpeg",
+  "Matchmaker": "/images/matchmaker.jpeg",
+  "Birthday Cake Gelato": "/images/birthday-cake-gelato.jpeg",
+  "Gorilla Snacks": "/images/gorilla-snacks.jpeg",
   "Cowboy Cookies": "/images/cowboy-cookies.jpeg",
-"Sherb Cookies": "/images/sherb-cookies.jpeg",
-"Cookie Breath F3": "/images/cookie-breath-f3.jpeg",
-"Rainbow Sprinkles": "/images/rainbow-sprinkles.jpeg",
-"Schmuckleberry Cookies": "/images/schmuckleberry-cookies.jpeg",
+  "Sherb Cookies": "/images/sherb-cookies.jpeg",
+  "Cookie Breath F3": "/images/cookie-breath-f3.jpeg",
+  "Rainbow Sprinkles": "/images/rainbow-sprinkles.jpeg",
+  "Schmuckleberry Cookies": "/images/schmuckleberry-cookies.jpeg",
   "Jogi Diamonds": "/images/jogi-diamonds.jpeg",
   "Frosty Mac Alien Crumbs": "/images/frosty-mac-alien-crumbs.png",
-"Super OG": "/images/super-og.jpeg",
+  "Super OG": "/images/super-og.jpeg",
   "Cherry Vanilla Sundae": "/images/cherry-vanilla-sundae.jpeg",
   "Tiara Miss Ooh": "/images/tiara-miss-ooh.jpeg",
   "Beast Mode": "/images/beast-mode.jpeg",
   "Whiteout": "/images/whiteout.png",
-"NFSOT Runtz": "/images/nfsot-runtz.png",
+  "NFSOT Runtz": "/images/nfsot-runtz.png",
   "Luke Sky Monster": "/images/luke-sky-monster.jpeg",
   "FrooTie Tootie": "/images/frootie-tootie.png",
   "Blueberry Parfait": "/images/blueberry-parfait.png",
@@ -89,7 +89,6 @@ const strainImages = {
   "Cosmic Drift": "/images/cosmic-drift.jpeg",
   "Cookies and Cream": "/images/cookies-and-cream.jpeg",
   "Rocky Road": "/images/rocky-road.jpeg",
-  "Hunch Punch": "/images/hunch-punch.png",
   "Hunch Punch F2": "/images/hunch-punch-f2.jpeg",
   "Sombrero's Clock": "/images/Sombreros-clock.jpeg",
   "Black Cherry Sour Diesel": "/images/black-cherry-sour-diesel.jpeg",
@@ -100,9 +99,8 @@ const strainImages = {
   "Monkey Business": "/images/monkey-business.jpeg",
   "Rubik's Cube": "/images/rubiks-cube.png",
   "Super Jealous": "/images/super-jealous.png",
-"Jealous Zombie": "/images/jealous-zombie.png",
+  "Jealous Zombie": "/images/jealous-zombie.png",
   "Smell My Fingerz": "/images/smell-my-fingerz.png",
-  "Sugar Rush": "/images/sugar-rush.jpeg",
   "Skunky Chicken": "/images/skunky-chicken.jpeg",
   "Earthquake Typhoon": "/images/earthquake-typhoon.png",
   "Monkey Bash": "/images/monkey-bash.png",
@@ -112,7 +110,7 @@ const strainImages = {
   "Cosmic Crunch": "/images/cosmic-crunch.png",
   "Biscotti Crunch": "/images/biscotti-crunch.png",
   "Frosted Terps F3": "/images/frosted-terps-f3.png",
-"Platinum Frosted Terps": "/images/platinum-frosted-terps.png",
+  "Platinum Frosted Terps": "/images/platinum-frosted-terps.png",
   "Ice Catcher": "/images/ice-catcher.jpeg",
   "Gummy Blast": "/images/gummy-blast.jpeg",
   "Zesty Lemon": "/images/zesty-lemon.jpeg",
@@ -120,32 +118,73 @@ const strainImages = {
   "Fa-Kawi Sour": "/images/fa-kawi-sour.jpeg",
   "Frostbite": "/images/frostbite.jpeg",
   "Frozen Yeti": "/images/frozen-yeti.jpeg",
-  "Freezer Burnt": "/images/freezer-burnt.jpeg",
 
   "Island Breeze": "/images/island-breeze.jpeg",
   "Glazed Oreoz": "/images/glazed-oreoz.jpeg",
-  "London Frost": "/images/london-frost.jpeg",
+
+  "London Frost": [
+    "/images/london-frost.jpeg",
+    "/images/london-frost-1.jpeg",
+    "/images/london-frost-2.jpeg"
+  ],
+
   "Wave Runner": "/images/wave-runner.jpeg",
-  "Gorilla Kush": "/images/gorilla-kush.jpeg",
-"Tropicana Cherry": "/images/tropicana-cherry.png",
-"Midnight Cherries": "/images/midnight-cherries.png",
-"Scrambled Chaos": "/images/scrambled-chaos.jpeg",
-"Code Breaker": "/images/code-breaker.jpeg",
-"Donut Cookies": "/images/donut-cookies.png",
-"Cherry Berry Blast": "/images/cherry-berry-blast.png",
-"Tropical Gorilla": "/images/tropical-gorilla.png",
 
-"Apple Muffins": "/images/apple-muffins.jpeg",
-"Sour Kushberry": "/images/sour-kushberry.jpeg",
-"Luscious Melon": "/images/luscious-melon.png",
-"Candy Paint": "/images/candy-paint.jpeg",
-"Galactic Jelly": "/images/galactic-jelly.png",
-"The Schwartz": "/images/the-schwartz.png",
-"Arabian Apples": "/images/arabian-apples.png",
+  "Gorilla Kush": [
+    "/images/gorilla-kush.jpeg",
+    "/images/gorilla-kush-2.jpeg"
+  ],
 
-"Lion Fuel": "/images/lion-fuel.jpeg",
-"Frozen Fury": "/images/frozen-fury.jpeg",
-"Phantom Eclipse": "/images/phantom-eclipse.jpeg",
+  "Tropicana Cherry": "/images/tropicana-cherry.png",
+  "Midnight Cherries": "/images/midnight-cherries.png",
+  "Scrambled Chaos": "/images/scrambled-chaos.jpeg",
+  "Code Breaker": "/images/code-breaker.jpeg",
+  "Donut Cookies": "/images/donut-cookies.png",
+  "Cherry Berry Blast": "/images/cherry-berry-blast.png",
+  "Tropical Gorilla": "/images/tropical-gorilla.png",
+
+  "Apple Muffins": "/images/apple-muffins.jpeg",
+  "Sour Kushberry": "/images/sour-kushberry.jpeg",
+  "Luscious Melon": "/images/luscious-melon.png",
+  "Candy Paint": "/images/candy-paint.jpeg",
+  "Galactic Jelly": "/images/galactic-jelly.png",
+  "The Schwartz": "/images/the-schwartz.png",
+  "Arabian Apples": "/images/arabian-apples.png",
+
+  "Lion Fuel": "/images/lion-fuel.jpeg",
+  "Frozen Fury": "/images/frozen-fury.jpeg",
+  "Phantom Eclipse": "/images/phantom-eclipse.jpeg"
 };
+
+/**
+ * Always returns an array of images.
+ *
+ * Strains with one image return:
+ * ["/images/example.jpeg"]
+ *
+ * Strains with multiple images return:
+ * [
+ *   "/images/example.jpeg",
+ *   "/images/example-2.jpeg"
+ * ]
+ */
+export function getStrainImages(strainName) {
+  const imageEntry = strainImages[strainName];
+
+  if (!imageEntry) {
+    return [];
+  }
+
+  return Array.isArray(imageEntry) ? imageEntry : [imageEntry];
+}
+
+/**
+ * Returns the first image for the strain.
+ * This can continue to be used as the image shown on the main strain card.
+ */
+export function getMainStrainImage(strainName) {
+  const images = getStrainImages(strainName);
+  return images.length > 0 ? images[0] : "";
+}
 
 export default strainImages;
