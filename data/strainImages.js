@@ -129,7 +129,7 @@ const strainImages = {
 
   "Wave Runner": "/images/wave-runner.jpeg",
 
-  "Gorilla Kush": "/images/gorilla-kush-real.jpeg",
+  "Gorilla Kush": "/images/gorilla-kush.jpeg",
 
   "Tropicana Cherry": "/images/tropicana-cherry.png",
   "Midnight Cherries": "/images/midnight-cherries.png",
