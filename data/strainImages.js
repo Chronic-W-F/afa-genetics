@@ -27,14 +27,14 @@ const strainImages = {
   "Grave Digger": "/images/grave-digger.png",
   "Forgetful Cherries": "/images/forgetful-cherries.png",
   "Quantum Leap": "/images/quantum-leap.png",
-  "Pappy's Breath F2": "/images/pappy's-breath-f2.png",
+  "Pappy's Breath F2": "/images/pappys-breath-f2.png",
   "Cream Sickle Dream": "/images/cream-sickle-dream.png",
   "Jogi 51": "/images/jogi-51.png",
   "Creamy Garlic": "/images/creamy-garlic.png",
   "Garlic Breath": "/images/garlic-breath.png",
-  "Pappy's Breath": "/images/pappy's-breath.png",
+  "Pappy's Breath": "/images/pappys-breath.png",
   "Knockout OG": "/images/knockout-og.png",
-  "Titan's Kiss": "/images/titan's-kiss.png",
+  "Titan's Kiss": "/images/titans-kiss.png",
   "Whirlwind Cookies": "/images/whirlwind-cookies.png",
   "Black Cherry Sour D F3": "/images/black-cherry-sour-d-f3.png",
   "Brain Teaser": "/images/brain-teaser.png",
@@ -47,7 +47,7 @@ const strainImages = {
   "Oreo Frosting": "/images/oreo-frosting.jpeg",
   "Italian Lemon Drop Cookies": "/images/italian-lemon-drop-cookies.jpeg",
   "Brain Freeze": "/images/brain-freeze.jpeg",
-  "Santa's Sour": "/images/santa's-sour.jpeg",
+  "Santa's Sour": "/images/santas-sour.jpeg",
   "Silent Nights": "/images/silent-nights.jpeg",
   "Sour Trix": "/images/sour-trix.jpeg",
   "Space Cookies": "/images/space-cookies.jpeg",
@@ -118,23 +118,11 @@ const strainImages = {
   "Fa-Kawi Sour": "/images/fa-kawi-sour.jpeg",
   "Frostbite": "/images/frostbite.jpeg",
   "Frozen Yeti": "/images/frozen-yeti.jpeg",
-
   "Island Breeze": "/images/island-breeze.jpeg",
   "Glazed Oreoz": "/images/glazed-oreoz.jpeg",
-
-  "London Frost": [
-    "/images/london-frost.jpeg",
-    "/images/london-frost-1.jpeg",
-    "/images/london-frost-2.jpeg"
-  ],
-
+  "London Frost": "/images/london-frost.jpeg",
   "Wave Runner": "/images/wave-runner.jpeg",
-
-  "Gorilla Kush": [
-    "/images/gorilla-kush.jpeg",
-    "/images/gorilla-kush-2.jpeg"
-  ],
-
+  "Gorilla Kush": "/images/gorilla-kush.jpeg",
   "Tropicana Cherry": "/images/tropicana-cherry.png",
   "Midnight Cherries": "/images/midnight-cherries.png",
   "Scrambled Chaos": "/images/scrambled-chaos.jpeg",
@@ -142,7 +130,6 @@ const strainImages = {
   "Donut Cookies": "/images/donut-cookies.png",
   "Cherry Berry Blast": "/images/cherry-berry-blast.png",
   "Tropical Gorilla": "/images/tropical-gorilla.png",
-
   "Apple Muffins": "/images/apple-muffins.jpeg",
   "Sour Kushberry": "/images/sour-kushberry.jpeg",
   "Luscious Melon": "/images/luscious-melon.png",
@@ -150,41 +137,9 @@ const strainImages = {
   "Galactic Jelly": "/images/galactic-jelly.png",
   "The Schwartz": "/images/the-schwartz.png",
   "Arabian Apples": "/images/arabian-apples.png",
-
   "Lion Fuel": "/images/lion-fuel.jpeg",
   "Frozen Fury": "/images/frozen-fury.jpeg",
   "Phantom Eclipse": "/images/phantom-eclipse.jpeg"
 };
-
-/**
- * Always returns an array of images.
- *
- * Strains with one image return:
- * ["/images/example.jpeg"]
- *
- * Strains with multiple images return:
- * [
- *   "/images/example.jpeg",
- *   "/images/example-2.jpeg"
- * ]
- */
-export function getStrainImages(strainName) {
-  const imageEntry = strainImages[strainName];
-
-  if (!imageEntry) {
-    return [];
-  }
-
-  return Array.isArray(imageEntry) ? imageEntry : [imageEntry];
-}
-
-/**
- * Returns the first image for the strain.
- * This can continue to be used as the image shown on the main strain card.
- */
-export function getMainStrainImage(strainName) {
-  const images = getStrainImages(strainName);
-  return images.length > 0 ? images[0] : "";
-}
 
 export default strainImages;
