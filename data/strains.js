@@ -200,9 +200,14 @@ const strains = {
       flavor: "Banana funk, sour diesel, creamy cookie haze"
     },
     {
-      name: "Grapefruit Sour D F3",
+      name: "Grapefruit Sour Diesel",
       type: "Auto Fem",
-      flavor: "Grapefruit Sour Diesel profile"
+      lineage: "New York City Diesel x Sour Diesel x Grapefruit Auto",
+      dominance: "Indica leaning hybrid",
+      terpenes: "Limonene, Caryophyllene, Myrcene",
+      flavor: "Zesty citrus, pungent diesel, skunky earthy finish",
+      effects: "Uplifting yet relaxing high",
+      time: "60-70 days"
     },
     {
   name: "Black Cherry Sour D F3",
