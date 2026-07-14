@@ -205,10 +205,15 @@ const strains = {
       flavor: "Grapefruit Sour Diesel profile"
     },
     {
-      name: "Black Cherry Sour D F3",
-      type: "Auto Fem",
-      flavor: "Black cherry Sour Diesel profile"
-    },
+  name: "Black Cherry Sour D F3",
+  type: "Auto Fem",
+  lineage: "Sour Black Cherry Haze x Sour Diesel x New York City Diesel",
+  dominance: "Indica leaning hybrid",
+  terpenes: "Pinene, Phellandrene, Myrcene",
+  flavor: "Sweet cherry, sour diesel, complex earthy finish",
+  effects: "Uplifting yet relaxing high",
+  time: "75-80 days"
+},
     {
       name: "Silent Nights",
       type: "Auto Fem",
