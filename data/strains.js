@@ -200,7 +200,7 @@ const strains = {
       flavor: "Banana funk, sour diesel, creamy cookie haze"
     },
     {
-      name: "Grapefruit Sour Diesel",
+      name: "Grapefruit Sour D F3",
       type: "Auto Fem",
       lineage: "New York City Diesel x Sour Diesel x Grapefruit Auto",
       dominance: "Indica leaning hybrid",
