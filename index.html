@@ -6,7 +6,9 @@
   <title>AFA Genetics</title>
 
   <style>
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       margin: 0;
@@ -25,6 +27,7 @@
     .hero-banner {
       width: 100%;
       max-width: 1000px;
+      height: auto;
       display: block;
       margin: 0 auto;
     }
@@ -38,7 +41,9 @@
       border-bottom: 1px solid #143b14;
     }
 
-    .nav a, .letter-btn, .clear-btn {
+    .nav a,
+    .letter-btn,
+    .clear-btn {
       display: inline-block;
       color: #fff;
       border: 1px solid #39ff14;
@@ -58,7 +63,9 @@
       color: #000;
     }
 
-    section { padding: 22px 14px; }
+    section {
+      padding: 22px 14px;
+    }
 
     h2 {
       color: #39ff14;
@@ -67,7 +74,8 @@
       text-shadow: 0 0 10px #39ff14;
     }
 
-    .search-card, .order-card {
+    .search-card,
+    .order-card {
       max-width: 720px;
       margin: 14px auto;
       padding: 18px;
@@ -106,12 +114,21 @@
       box-shadow: 0 0 12px #39ff14;
       overflow: hidden;
       text-align: left;
+
+      /*
+        Helps browsers avoid rendering distant cards
+        until they're getting near the screen.
+      */
+      content-visibility: auto;
+      contain-intrinsic-size: 600px;
     }
 
     .strain-img {
       width: 100%;
+      height: auto;
       display: block;
       border-bottom: 1px solid #145214;
+      background: #050505;
     }
 
     .strain-button {
@@ -139,7 +156,9 @@
       border-top: 1px solid #145214;
     }
 
-    .strain-details p { margin: 9px 0; }
+    .strain-details p {
+      margin: 9px 0;
+    }
 
     .label {
       color: #39ff14;
@@ -198,7 +217,8 @@
       flex-wrap: wrap;
     }
 
-    .qty-btn, .remove-btn {
+    .qty-btn,
+    .remove-btn {
       border: 1px solid #39ff14;
       background: #000;
       color: #39ff14;
@@ -321,8 +341,18 @@
 </head>
 
 <body>
+
   <header>
-    <img src="/public/images/banner.png" alt="AFA Genetics Banner" class="hero-banner">
+    <!--
+      Banner is above the fold, so we intentionally load this one immediately.
+    -->
+    <img
+      src="/public/images/banner.png"
+      alt="AFA Genetics Banner"
+      class="hero-banner"
+      decoding="async"
+      fetchpriority="high"
+    >
   </header>
 
   <nav class="nav">
@@ -336,6 +366,7 @@
 
   <section id="pricing">
     <h2>Pricing</h2>
+
     <div class="order-card">
       3 Pack — $25<br>
       5 Pack — $30<br>
@@ -353,9 +384,18 @@
     <h2>Search Catalog</h2>
 
     <div class="search-card">
-      <input id="searchInput" type="text" placeholder="Search anything: F3, garlic, diesel, berry..." />
+      <input
+        id="searchInput"
+        type="text"
+        placeholder="Search anything: F3, garlic, diesel, berry..."
+      />
+
       <div id="letterFilters"></div>
-      <button class="clear-btn" id="clearFilters">Clear Search</button>
+
+      <button class="clear-btn" id="clearFilters">
+        Clear Search
+      </button>
+
       <div class="result-count" id="resultCount"></div>
     </div>
   </section>
@@ -376,40 +416,86 @@
   </section>
 
   <section id="order">
+
     <h2>Your Order</h2>
 
     <div class="order-card">
       <div id="cartItems"></div>
       <div id="cartTotals"></div>
-      <button class="clear-cart-btn" id="clearCartBtn">Clear Order</button>
+
+      <button
+        class="clear-cart-btn"
+        id="clearCartBtn"
+      >
+        Clear Order
+      </button>
     </div>
 
     <h2>Payment</h2>
 
     <div class="order-card">
+
       Send payment via Cash App or Venmo, then email your order with shipping info.
-     <br><br>
-<div style="border: 2px solid #ff4d4d; border-radius: 14px; padding: 14px; color: #fff; background: #120000; box-shadow: 0 0 10px #ff4d4d;">
-  ⚠️ <strong>Payment Memo Required:</strong><br>
-  Please <strong>DO NOT</strong> write seeds, strain names, cannabis, genetics, or anything related in the payment description.<br><br>
-  Use only the 🎁 emoji in the payment memo.
-  Including prohibited terms may result in delayed or canceled orders.
-</div>
+
       <br><br>
-      The email button below will auto-fill your selected strains, pack sizes, subtotal, shipping, and total.
+
+      <div
+        style="
+          border: 2px solid #ff4d4d;
+          border-radius: 14px;
+          padding: 14px;
+          color: #fff;
+          background: #120000;
+          box-shadow: 0 0 10px #ff4d4d;
+        "
+      >
+
+        ⚠️ <strong>Payment Memo Required:</strong><br>
+
+        Please <strong>DO NOT</strong> write seeds, strain names, cannabis,
+        genetics, or anything related in the payment description.
+
+        <br><br>
+
+        Use only the 🎁 emoji in the payment memo.
+
+        Including prohibited terms may result in delayed or canceled orders.
+
+      </div>
+
+      <br><br>
+
+      The email button below will auto-fill your selected strains,
+      pack sizes, subtotal, shipping, and total.
+
     </div>
 
-    <a class="pay-link" href="https://cash.app/$ChuckGermond" target="_blank">
+    <a
+      class="pay-link"
+      href="https://cash.app/$ChuckGermond"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       Cash App: $ChuckGermond
     </a>
 
-    <a class="pay-link" href="https://venmo.com/u/afagen" target="_blank">
+    <a
+      class="pay-link"
+      href="https://venmo.com/u/afagen"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       Venmo: @afagen
     </a>
 
-    <a class="email-btn disabled" id="emailOrderBtn" href="#">
+    <a
+      class="email-btn disabled"
+      id="emailOrderBtn"
+      href="#"
+    >
       Email Order
     </a>
+
   </section>
 
   <footer>
@@ -417,28 +503,76 @@
     Collector / novelty seed catalog
   </footer>
 
-  <div class="floating-cart" id="floatingCart">
-    <a href="#order" id="floatingCartLink">View Order</a>
+  <div
+    class="floating-cart"
+    id="floatingCart"
+  >
+    <a
+      href="#order"
+      id="floatingCartLink"
+    >
+      View Order
+    </a>
   </div>
 
+
   <script type="module">
+
     import strains from "./data/strains.js";
     import strainImages from "./data/strainImages.js";
 
-    const autoFemList = document.getElementById("autoFemList");
-    const fastFlowerList = document.getElementById("fastFlowerList");
-    const juneDropList = document.getElementById("juneDropList");
-    const searchInput = document.getElementById("searchInput");
-    const letterFilters = document.getElementById("letterFilters");
-    const clearFilters = document.getElementById("clearFilters");
-    const resultCount = document.getElementById("resultCount");
 
-    const cartItems = document.getElementById("cartItems");
-    const cartTotals = document.getElementById("cartTotals");
-    const clearCartBtn = document.getElementById("clearCartBtn");
-    const emailOrderBtn = document.getElementById("emailOrderBtn");
-    const floatingCart = document.getElementById("floatingCart");
-    const floatingCartLink = document.getElementById("floatingCartLink");
+    /*
+    ============================================================
+    ELEMENTS
+    ============================================================
+    */
+
+    const autoFemList =
+      document.getElementById("autoFemList");
+
+    const fastFlowerList =
+      document.getElementById("fastFlowerList");
+
+    const juneDropList =
+      document.getElementById("juneDropList");
+
+    const searchInput =
+      document.getElementById("searchInput");
+
+    const letterFilters =
+      document.getElementById("letterFilters");
+
+    const clearFilters =
+      document.getElementById("clearFilters");
+
+    const resultCount =
+      document.getElementById("resultCount");
+
+    const cartItems =
+      document.getElementById("cartItems");
+
+    const cartTotals =
+      document.getElementById("cartTotals");
+
+    const clearCartBtn =
+      document.getElementById("clearCartBtn");
+
+    const emailOrderBtn =
+      document.getElementById("emailOrderBtn");
+
+    const floatingCart =
+      document.getElementById("floatingCart");
+
+    const floatingCartLink =
+      document.getElementById("floatingCartLink");
+
+
+    /*
+    ============================================================
+    PRICES
+    ============================================================
+    */
 
     const PACK_PRICES = {
       "3 Pack": 25,
@@ -448,93 +582,452 @@
 
     const SHIPPING = 10;
 
-    const savedSearch = localStorage.getItem("afaSearch") || "";
-    const savedLetter = localStorage.getItem("afaLetter") || "All";
-    const savedCart = localStorage.getItem("afaCart");
+
+    /*
+    ============================================================
+    SAVED SETTINGS
+    ============================================================
+    */
+
+    const savedSearch =
+      localStorage.getItem("afaSearch") || "";
+
+    const savedLetter =
+      localStorage.getItem("afaLetter") || "All";
+
+    const savedCart =
+      localStorage.getItem("afaCart");
+
 
     let activeLetter = savedLetter;
-    let cart = savedCart ? JSON.parse(savedCart) : [];
+
+    let cart = [];
+
+    try {
+
+      cart = savedCart
+        ? JSON.parse(savedCart)
+        : [];
+
+      if (!Array.isArray(cart)) {
+        cart = [];
+      }
+
+    } catch {
+
+      cart = [];
+
+    }
+
 
     searchInput.value = savedSearch;
 
-    const alphabet = ["All", ..."ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
 
-    letterFilters.innerHTML = alphabet
-      .map(letter => `<button class="letter-btn" data-letter="${letter}">${letter}</button>`)
-      .join("");
+    /*
+    ============================================================
+    ALPHABET BUTTONS
+    ============================================================
+    */
+
+    const alphabet = [
+      "All",
+      ..."ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    ];
+
+
+    letterFilters.innerHTML =
+      alphabet
+        .map(letter => `
+          <button
+            class="letter-btn"
+            data-letter="${letter}"
+          >
+            ${letter}
+          </button>
+        `)
+        .join("");
+
+
+    /*
+    ============================================================
+    HTML SAFETY
+    ============================================================
+    */
 
     function escapeHtml(value) {
+
       return String(value || "")
         .replaceAll("&", "&amp;")
         .replaceAll("<", "&lt;")
         .replaceAll(">", "&gt;")
         .replaceAll('"', "&quot;")
         .replaceAll("'", "&#039;");
+
     }
+
 
     function field(label, value) {
-      if (!value) return "";
-      return `<p><span class="label">${label}:</span> ${escapeHtml(value)}</p>`;
+
+      if (!value) {
+        return "";
+      }
+
+      return `
+        <p>
+          <span class="label">
+            ${label}:
+          </span>
+
+          ${escapeHtml(value)}
+        </p>
+      `;
+
     }
 
+
+    /*
+    ============================================================
+    IMAGE PATH
+    ============================================================
+
+    Leaving your existing /public/images setup intact
+    so we don't break the current deployment.
+    ============================================================
+    */
+
     function getImagePath(strain) {
-      const rawImage = strain.image || strainImages[strain.name];
-      if (!rawImage) return "";
+
+      const rawImage =
+        strain.image ||
+        strainImages[strain.name];
+
+      if (!rawImage) {
+        return "";
+      }
 
       if (rawImage.startsWith("/images/")) {
+
         return `/public${rawImage}`;
+
       }
 
       return rawImage;
+
     }
+
+
+    /*
+    ============================================================
+    LAZY IMAGE SYSTEM
+    ============================================================
+
+    IMPORTANT:
+
+    Images DO NOT receive a src URL when the HTML is created.
+
+    They only receive their real src when they're about to
+    enter the visitor's screen.
+
+    This prevents someone opening the homepage from immediately
+    downloading every strain image in the entire catalog.
+    ============================================================
+    */
+
+    let imageObserver = null;
+
+
+    function disconnectImageObserver() {
+
+      if (imageObserver) {
+
+        imageObserver.disconnect();
+        imageObserver = null;
+
+      }
+
+    }
+
+
+    function loadImage(img) {
+
+      if (!img) {
+        return;
+      }
+
+      if (img.dataset.loaded === "true") {
+        return;
+      }
+
+      const source =
+        img.dataset.src;
+
+      if (!source) {
+        return;
+      }
+
+      img.dataset.loaded = "true";
+
+      img.src = source;
+
+      img.removeAttribute("data-src");
+
+    }
+
+
+    function initLazyImages() {
+
+      disconnectImageObserver();
+
+
+      const images =
+        document.querySelectorAll(
+          ".lazy-strain-img[data-src]"
+        );
+
+
+      if (!images.length) {
+        return;
+      }
+
+
+      /*
+        Fallback for browsers that don't support
+        IntersectionObserver.
+      */
+
+      if (!("IntersectionObserver" in window)) {
+
+        images.forEach(loadImage);
+
+        return;
+
+      }
+
+
+      imageObserver =
+        new IntersectionObserver(
+
+          entries => {
+
+            entries.forEach(entry => {
+
+              if (!entry.isIntersecting) {
+                return;
+              }
+
+              loadImage(entry.target);
+
+              imageObserver.unobserve(
+                entry.target
+              );
+
+            });
+
+          },
+
+          {
+            /*
+              Start loading roughly 200px before
+              the visitor reaches the image.
+            */
+
+            rootMargin:
+              "200px 0px 200px 0px",
+
+            threshold: 0.01
+          }
+
+        );
+
+
+      images.forEach(img => {
+
+        imageObserver.observe(img);
+
+      });
+
+    }
+
+
+    /*
+    ============================================================
+    STRAIN CARD
+    ============================================================
+    */
 
     function renderStrain(strain) {
-      const image = getImagePath(strain);
-      const safeName = escapeHtml(strain.name);
-      const safeType = escapeHtml(strain.type || "Auto Fem");
+
+      const image =
+        getImagePath(strain);
+
+      const safeName =
+        escapeHtml(strain.name);
+
+      const safeType =
+        escapeHtml(
+          strain.type ||
+          "Auto Fem"
+        );
+
 
       return `
-        <div class="strain-card">
-          ${image ? `<img src="${image}" class="strain-img" alt="${safeName}" onerror="this.style.display='none'">` : ""}
 
-          <button class="strain-button">
+        <div class="strain-card">
+
+          ${
+            image
+              ? `
+                <img
+                  data-src="${escapeHtml(image)}"
+                  class="strain-img lazy-strain-img"
+                  alt="${safeName}"
+                  loading="lazy"
+                  decoding="async"
+                  fetchpriority="low"
+                  data-loaded="false"
+                  onerror="this.style.display='none'"
+                >
+              `
+              : ""
+          }
+
+
+          <button
+            class="strain-button"
+            type="button"
+          >
+
             ${safeName}
+
             <span>+</span>
+
           </button>
 
+
           <div class="strain-details">
-            ${field("Type", strain.type || "Auto Fem")}
-            ${field("Drop", strain.drop)}
-            ${field("Lineage", strain.lineage)}
-            ${field("Dominance", strain.dominance)}
-            ${field("THC", strain.thc)}
-            ${field("Ease", strain.ease)}
-            ${field("Yield", strain.yield)}
-            ${field("Flower Time", strain.time)}
-            ${field("Terpenes", strain.terpenes)}
-            ${field("Flavor", strain.flavor)}
-            ${field("Effects", strain.effects)}
-            ${field("Description", strain.description)}
-            ${field("Note", strain.note)}
+
+            ${field(
+              "Type",
+              strain.type ||
+              "Auto Fem"
+            )}
+
+            ${field(
+              "Drop",
+              strain.drop
+            )}
+
+            ${field(
+              "Lineage",
+              strain.lineage
+            )}
+
+            ${field(
+              "Dominance",
+              strain.dominance
+            )}
+
+            ${field(
+              "THC",
+              strain.thc
+            )}
+
+            ${field(
+              "Ease",
+              strain.ease
+            )}
+
+            ${field(
+              "Yield",
+              strain.yield
+            )}
+
+            ${field(
+              "Flower Time",
+              strain.time
+            )}
+
+            ${field(
+              "Terpenes",
+              strain.terpenes
+            )}
+
+            ${field(
+              "Flavor",
+              strain.flavor
+            )}
+
+            ${field(
+              "Effects",
+              strain.effects
+            )}
+
+            ${field(
+              "Description",
+              strain.description
+            )}
+
+            ${field(
+              "Note",
+              strain.note
+            )}
+
 
             <div class="pack-buttons">
-              <button class="add-pack-btn" data-name="${safeName}" data-type="${safeType}" data-pack="3 Pack">
+
+              <button
+                class="add-pack-btn"
+                type="button"
+                data-name="${safeName}"
+                data-type="${safeType}"
+                data-pack="3 Pack"
+              >
                 Add 3 Pack — $25
               </button>
-              <button class="add-pack-btn" data-name="${safeName}" data-type="${safeType}" data-pack="5 Pack">
+
+
+              <button
+                class="add-pack-btn"
+                type="button"
+                data-name="${safeName}"
+                data-type="${safeType}"
+                data-pack="5 Pack"
+              >
                 Add 5 Pack — $30
               </button>
-              <button class="add-pack-btn" data-name="${safeName}" data-type="${safeType}" data-pack="10 Pack">
+
+
+              <button
+                class="add-pack-btn"
+                type="button"
+                data-name="${safeName}"
+                data-type="${safeType}"
+                data-pack="10 Pack"
+              >
                 Add 10 Pack — $50
               </button>
+
             </div>
+
           </div>
+
         </div>
+
       `;
+
     }
 
+
+    /*
+    ============================================================
+    SEARCH
+    ============================================================
+    */
+
     function searchableText(strain) {
+
       return [
+
         strain.name,
         strain.type,
         strain.drop,
@@ -549,283 +1042,1088 @@
         strain.effects,
         strain.description,
         strain.note
-      ].filter(Boolean).join(" ").toLowerCase();
+
+      ]
+        .filter(Boolean)
+        .join(" ")
+        .toLowerCase();
+
     }
+
 
     function filterList(list) {
-      const query = searchInput.value.trim().toLowerCase();
+
+      const query =
+        searchInput.value
+          .trim()
+          .toLowerCase();
+
 
       return list.filter(strain => {
-        const matchesSearch = !query || searchableText(strain).includes(query);
-        const matchesLetter = activeLetter === "All" || strain.name.toUpperCase().startsWith(activeLetter);
-        return matchesSearch && matchesLetter;
+
+        const matchesSearch =
+
+          !query ||
+
+          searchableText(strain)
+            .includes(query);
+
+
+        const matchesLetter =
+
+          activeLetter === "All" ||
+
+          strain.name
+            .toUpperCase()
+            .startsWith(activeLetter);
+
+
+        return (
+          matchesSearch &&
+          matchesLetter
+        );
+
       });
+
     }
+
+
+    /*
+    ============================================================
+    CART
+    ============================================================
+    */
 
     function saveCart() {
-      localStorage.setItem("afaCart", JSON.stringify(cart));
+
+      localStorage.setItem(
+        "afaCart",
+        JSON.stringify(cart)
+      );
+
     }
 
-    function addToCart(name, type, pack) {
-      const existing = cart.find(item => item.name === name && item.pack === pack);
+
+    function addToCart(
+      name,
+      type,
+      pack
+    ) {
+
+      const existing =
+        cart.find(item =>
+
+          item.name === name &&
+          item.pack === pack
+
+        );
+
 
       if (existing) {
+
         existing.qty += 1;
+
       } else {
+
         cart.push({
+
           name,
           type,
           pack,
-          price: PACK_PRICES[pack],
+
+          price:
+            PACK_PRICES[pack],
+
           qty: 1
+
         });
+
       }
 
+
       saveCart();
+
       renderCart();
+
     }
 
-    function updateQty(index, change) {
+
+    function updateQty(
+      index,
+      change
+    ) {
+
+      if (!cart[index]) {
+        return;
+      }
+
       cart[index].qty += change;
 
-      if (cart[index].qty <= 0) {
-        cart.splice(index, 1);
+
+      if (
+        cart[index].qty <= 0
+      ) {
+
+        cart.splice(
+          index,
+          1
+        );
+
       }
 
+
       saveCart();
+
       renderCart();
+
     }
+
 
     function removeItem(index) {
-      cart.splice(index, 1);
+
+      if (!cart[index]) {
+        return;
+      }
+
+      cart.splice(
+        index,
+        1
+      );
+
+
       saveCart();
+
       renderCart();
+
     }
 
+
+    /*
+    ============================================================
+    TOTALS
+    ============================================================
+    */
+
     function calculateTotals() {
+
       let subtotal = 0;
+
       let normalThreePackCount = 0;
+
       let normalThreePackValue = 0;
 
+
       cart.forEach(item => {
-        if (item.pack === "3 Pack") {
-          normalThreePackCount += item.qty;
-          normalThreePackValue += item.qty * item.price;
+
+        if (
+          item.pack === "3 Pack"
+        ) {
+
+          normalThreePackCount +=
+            item.qty;
+
+
+          normalThreePackValue +=
+            item.qty *
+            item.price;
+
         } else {
-          subtotal += item.qty * item.price;
+
+          subtotal +=
+            item.qty *
+            item.price;
+
         }
+
       });
 
-      const specialBundles = Math.floor(normalThreePackCount / 10);
-      const remainingThreePacks = normalThreePackCount % 10;
 
-      const threePackSubtotal = (specialBundles * 100) + (remainingThreePacks * 25);
-      const discount = normalThreePackValue - threePackSubtotal;
+      const specialBundles =
+        Math.floor(
+          normalThreePackCount / 10
+        );
 
-      subtotal += threePackSubtotal;
 
-      const shipping = cart.length > 0 ? SHIPPING : 0;
-      const total = subtotal + shipping;
+      const remainingThreePacks =
+        normalThreePackCount % 10;
+
+
+      const threePackSubtotal =
+
+        (
+          specialBundles *
+          100
+        ) +
+
+        (
+          remainingThreePacks *
+          25
+        );
+
+
+      const discount =
+
+        normalThreePackValue -
+        threePackSubtotal;
+
+
+      subtotal +=
+        threePackSubtotal;
+
+
+      const shipping =
+
+        cart.length > 0
+          ? SHIPPING
+          : 0;
+
+
+      const total =
+
+        subtotal +
+        shipping;
+
 
       return {
+
         subtotal,
         shipping,
         total,
         discount,
         specialBundles,
-        itemCount: cart.reduce((sum, item) => sum + item.qty, 0)
+
+        itemCount:
+          cart.reduce(
+            (sum, item) =>
+              sum + item.qty,
+            0
+          )
+
       };
+
     }
+
+
+    /*
+    ============================================================
+    CART DISPLAY
+    ============================================================
+    */
 
     function renderCart() {
-      const totals = calculateTotals();
 
-      if (cart.length === 0) {
-        cartItems.innerHTML = `<div class="empty-cart">Your order is empty. Open a strain and choose a pack size.</div>`;
-        cartTotals.innerHTML = "";
-        clearCartBtn.style.display = "none";
-        emailOrderBtn.classList.add("disabled");
-        emailOrderBtn.href = "#";
-        floatingCart.style.display = "none";
+      const totals =
+        calculateTotals();
+
+
+      if (
+        cart.length === 0
+      ) {
+
+        cartItems.innerHTML = `
+
+          <div class="empty-cart">
+
+            Your order is empty.
+            Open a strain and choose
+            a pack size.
+
+          </div>
+
+        `;
+
+
+        cartTotals.innerHTML =
+          "";
+
+
+        clearCartBtn.style.display =
+          "none";
+
+
+        emailOrderBtn.classList.add(
+          "disabled"
+        );
+
+
+        emailOrderBtn.href =
+          "#";
+
+
+        floatingCart.style.display =
+          "none";
+
+
         return;
+
       }
 
-      clearCartBtn.style.display = "block";
-      floatingCart.style.display = "block";
-      floatingCartLink.textContent = `View Order (${totals.itemCount}) — $${totals.total}`;
 
-      cartItems.innerHTML = cart.map((item, index) => `
-        <div class="cart-item">
-          <div class="cart-title">${escapeHtml(item.name)}</div>
-          <div class="cart-meta">
-            ${escapeHtml(item.type)} • ${escapeHtml(item.pack)} • $${item.price} each
-          </div>
-          <div class="qty-row">
-            <button class="qty-btn" data-action="minus" data-index="${index}">−</button>
-            <strong>Qty: ${item.qty}</strong>
-            <button class="qty-btn" data-action="plus" data-index="${index}">+</button>
-            <button class="remove-btn" data-action="remove" data-index="${index}">Remove</button>
-          </div>
-        </div>
-      `).join("");
+      clearCartBtn.style.display =
+        "block";
+
+
+      floatingCart.style.display =
+        "block";
+
+
+      floatingCartLink.textContent =
+
+        `View Order (${totals.itemCount}) — $${totals.total}`;
+
+
+      cartItems.innerHTML =
+
+        cart
+          .map(
+            (item, index) => `
+
+              <div class="cart-item">
+
+                <div class="cart-title">
+
+                  ${escapeHtml(
+                    item.name
+                  )}
+
+                </div>
+
+
+                <div class="cart-meta">
+
+                  ${escapeHtml(
+                    item.type
+                  )}
+
+                  •
+
+                  ${escapeHtml(
+                    item.pack
+                  )}
+
+                  •
+
+                  $${item.price} each
+
+                </div>
+
+
+                <div class="qty-row">
+
+                  <button
+                    class="qty-btn"
+                    type="button"
+                    data-action="minus"
+                    data-index="${index}"
+                  >
+                    −
+                  </button>
+
+
+                  <strong>
+                    Qty: ${item.qty}
+                  </strong>
+
+
+                  <button
+                    class="qty-btn"
+                    type="button"
+                    data-action="plus"
+                    data-index="${index}"
+                  >
+                    +
+                  </button>
+
+
+                  <button
+                    class="remove-btn"
+                    type="button"
+                    data-action="remove"
+                    data-index="${index}"
+                  >
+                    Remove
+                  </button>
+
+                </div>
+
+              </div>
+
+            `
+          )
+          .join("");
+
 
       cartTotals.innerHTML = `
-        ${totals.discount > 0 ? `<div class="special-note">Spring Special Applied: -$${totals.discount}</div>` : ""}
-        ${totals.specialBundles > 0 ? `<div class="special-note">${totals.specialBundles} × Spring Special bundle${totals.specialBundles === 1 ? "" : "s"} included</div>` : ""}
+
+        ${
+          totals.discount > 0
+            ? `
+              <div class="special-note">
+                Spring Special Applied:
+                -$${totals.discount}
+              </div>
+            `
+            : ""
+        }
+
+
+        ${
+          totals.specialBundles > 0
+            ? `
+              <div class="special-note">
+
+                ${totals.specialBundles}
+                × Spring Special
+
+                bundle${
+                  totals.specialBundles === 1
+                    ? ""
+                    : "s"
+                }
+
+                included
+
+              </div>
+            `
+            : ""
+        }
+
 
         <div class="cart-total-line">
-          <span>Subtotal:</span>
-          <strong>$${totals.subtotal}</strong>
+
+          <span>
+            Subtotal:
+          </span>
+
+          <strong>
+            $${totals.subtotal}
+          </strong>
+
         </div>
+
 
         <div class="cart-total-line">
-          <span>Shipping:</span>
-          <strong>$${totals.shipping}</strong>
+
+          <span>
+            Shipping:
+          </span>
+
+          <strong>
+            $${totals.shipping}
+          </strong>
+
         </div>
 
-        <div class="cart-total-line grand-total">
-          <span>Total:</span>
-          <span>$${totals.total}</span>
+
+        <div
+          class="cart-total-line grand-total"
+        >
+
+          <span>
+            Total:
+          </span>
+
+          <span>
+            $${totals.total}
+          </span>
+
         </div>
+
       `;
 
-      emailOrderBtn.classList.remove("disabled");
-      emailOrderBtn.href = buildEmailLink(totals);
+
+      emailOrderBtn.classList.remove(
+        "disabled"
+      );
+
+
+      emailOrderBtn.href =
+        buildEmailLink(
+          totals
+        );
+
     }
 
-    function buildEmailLink(totals) {
+
+    /*
+    ============================================================
+    EMAIL ORDER
+    ============================================================
+    */
+
+    function buildEmailLink(
+      totals
+    ) {
+
       const lines = [];
 
-      lines.push("AFA Genetics Order");
+
+      lines.push(
+        "AFA Genetics Order"
+      );
+
       lines.push("");
-      lines.push("Selected Items:");
+
+      lines.push(
+        "Selected Items:"
+      );
+
 
       cart.forEach(item => {
-        lines.push(`${item.name} - ${item.type} - ${item.pack} x ${item.qty} - $${item.price} each`);
+
+        lines.push(
+
+          `${item.name} - ${item.type} - ${item.pack} x ${item.qty} - $${item.price} each`
+
+        );
+
       });
 
+
       lines.push("");
-      if (totals.discount > 0) {
-        lines.push(`Spring Special Discount: -$${totals.discount}`);
+
+
+      if (
+        totals.discount > 0
+      ) {
+
+        lines.push(
+
+          `Spring Special Discount: -$${totals.discount}`
+
+        );
+
       }
 
-      lines.push(`Subtotal: $${totals.subtotal}`);
-      lines.push(`Shipping: $${totals.shipping}`);
-      lines.push(`Total: $${totals.total}`);
-      lines.push("");
-      lines.push("Shipping Name:");
-      lines.push("Shipping Address:");
-      lines.push("");
-      lines.push("Payment Method:");
-      lines.push("Payment Sent: Yes / No");
 
-      const subject = encodeURIComponent("AFA Genetics Order");
-      const body = encodeURIComponent(lines.join("\n"));
+      lines.push(
+        `Subtotal: $${totals.subtotal}`
+      );
 
-      return `mailto:bookingchuckeg@gmail.com?subject=${subject}&body=${body}`;
+      lines.push(
+        `Shipping: $${totals.shipping}`
+      );
+
+      lines.push(
+        `Total: $${totals.total}`
+      );
+
+      lines.push("");
+
+      lines.push(
+        "Shipping Name:"
+      );
+
+      lines.push(
+        "Shipping Address:"
+      );
+
+      lines.push("");
+
+      lines.push(
+        "Payment Method:"
+      );
+
+      lines.push(
+        "Payment Sent: Yes / No"
+      );
+
+
+      const subject =
+        encodeURIComponent(
+          "AFA Genetics Order"
+        );
+
+
+      const body =
+        encodeURIComponent(
+          lines.join("\n")
+        );
+
+
+      return (
+
+        `mailto:bookingchuckeg@gmail.com?subject=${subject}&body=${body}`
+
+      );
+
     }
+
+
+    /*
+    ============================================================
+    CARD BUTTON EVENTS
+    ============================================================
+    */
 
     function bindCardClicks() {
-      document.querySelectorAll(".strain-button").forEach((button) => {
-        button.addEventListener("click", () => {
-          const details = button.nextElementSibling;
-          const icon = button.querySelector("span");
-          const open = details.style.display === "block";
 
-          details.style.display = open ? "none" : "block";
-          icon.textContent = open ? "+" : "−";
-        });
-      });
+      document
+        .querySelectorAll(
+          ".strain-button"
+        )
+        .forEach(button => {
 
-      document.querySelectorAll(".add-pack-btn").forEach((button) => {
-        button.addEventListener("click", () => {
-          addToCart(button.dataset.name, button.dataset.type, button.dataset.pack);
+          button.addEventListener(
+            "click",
+            () => {
+
+              const details =
+                button.nextElementSibling;
+
+
+              const icon =
+                button.querySelector(
+                  "span"
+                );
+
+
+              const open =
+                details.style.display ===
+                "block";
+
+
+              details.style.display =
+
+                open
+                  ? "none"
+                  : "block";
+
+
+              icon.textContent =
+
+                open
+                  ? "+"
+                  : "−";
+
+            }
+          );
+
         });
-      });
+
+
+      document
+        .querySelectorAll(
+          ".add-pack-btn"
+        )
+        .forEach(button => {
+
+          button.addEventListener(
+            "click",
+            () => {
+
+              addToCart(
+
+                button.dataset.name,
+
+                button.dataset.type,
+
+                button.dataset.pack
+
+              );
+
+            }
+          );
+
+        });
+
     }
+
+
+    /*
+    ============================================================
+    ACTIVE LETTER
+    ============================================================
+    */
 
     function updateActiveButton() {
-      document.querySelectorAll(".letter-btn").forEach(button => {
-        button.classList.toggle("active", button.dataset.letter === activeLetter);
-      });
+
+      document
+        .querySelectorAll(
+          ".letter-btn"
+        )
+        .forEach(button => {
+
+          button.classList.toggle(
+
+            "active",
+
+            button.dataset.letter ===
+              activeLetter
+
+          );
+
+        });
+
     }
+
+
+    /*
+    ============================================================
+    JUNE DROP
+    ============================================================
+    */
 
     function getJuneDropStrains() {
-      const juneAuto = (strains.autoFem || []).filter(
-        strain => strain.drop === "June 2026"
-      );
 
-      const juneFast = (strains.fastFlower || []).filter(
-        strain => strain.drop === "June 2026"
-      );
+      const juneAuto =
+        (
+          strains.autoFem ||
+          []
+        )
+          .filter(
 
-      return [...juneAuto, ...juneFast];
+            strain =>
+              strain.drop ===
+              "June 2026"
+
+          );
+
+
+      const juneFast =
+        (
+          strains.fastFlower ||
+          []
+        )
+          .filter(
+
+            strain =>
+              strain.drop ===
+              "June 2026"
+
+          );
+
+
+      return [
+        ...juneAuto,
+        ...juneFast
+      ];
+
     }
+
+
+    /*
+    ============================================================
+    MAIN RENDER
+    ============================================================
+    */
 
     function renderAll() {
-      const filteredAuto = filterList(strains.autoFem || []);
-      const filteredFast = filterList(strains.fastFlower || []);
-      const filteredJune = filterList(getJuneDropStrains());
 
-      autoFemList.innerHTML = filteredAuto.map(renderStrain).join("");
-      fastFlowerList.innerHTML = filteredFast.map(renderStrain).join("");
-      juneDropList.innerHTML = filteredJune.map(renderStrain).join("");
+      /*
+        Disconnect old image watchers before
+        replacing the cards.
+      */
+
+      disconnectImageObserver();
+
+
+      const filteredAuto =
+        filterList(
+          strains.autoFem ||
+          []
+        );
+
+
+      const filteredFast =
+        filterList(
+          strains.fastFlower ||
+          []
+        );
+
+
+      const filteredJune =
+        filterList(
+          getJuneDropStrains()
+        );
+
+
+      autoFemList.innerHTML =
+
+        filteredAuto
+          .map(renderStrain)
+          .join("");
+
+
+      fastFlowerList.innerHTML =
+
+        filteredFast
+          .map(renderStrain)
+          .join("");
+
+
+      juneDropList.innerHTML =
+
+        filteredJune
+          .map(renderStrain)
+          .join("");
+
 
       const total =
+
         filteredAuto.length +
+
         filteredFast.length +
+
         filteredJune.length;
 
-      resultCount.textContent = `Showing ${total} result${total === 1 ? "" : "s"}`;
+
+      resultCount.textContent =
+
+        `Showing ${total} result${total === 1 ? "" : "s"}`;
+
 
       updateActiveButton();
+
       bindCardClicks();
+
+
+      /*
+        Critical bandwidth-saving function.
+      */
+
+      initLazyImages();
+
+
       renderCart();
+
     }
 
-    letterFilters.addEventListener("click", (event) => {
-      if (!event.target.matches(".letter-btn")) return;
 
-      activeLetter = event.target.dataset.letter;
-      localStorage.setItem("afaLetter", activeLetter);
-      renderAll();
-    });
+    /*
+    ============================================================
+    LETTER FILTER
+    ============================================================
+    */
 
-    searchInput.addEventListener("input", () => {
-      activeLetter = "All";
-      localStorage.setItem("afaSearch", searchInput.value);
-      localStorage.setItem("afaLetter", activeLetter);
-      renderAll();
-    });
+    letterFilters.addEventListener(
+      "click",
+      event => {
 
-    clearFilters.addEventListener("click", () => {
-      searchInput.value = "";
-      activeLetter = "All";
-      localStorage.removeItem("afaSearch");
-      localStorage.removeItem("afaLetter");
-      renderAll();
-    });
+        if (
+          !event.target.matches(
+            ".letter-btn"
+          )
+        ) {
 
-    cartItems.addEventListener("click", (event) => {
-      const button = event.target.closest("button");
-      if (!button) return;
+          return;
 
-      const index = Number(button.dataset.index);
-      const action = button.dataset.action;
+        }
 
-      if (action === "plus") updateQty(index, 1);
-      if (action === "minus") updateQty(index, -1);
-      if (action === "remove") removeItem(index);
-    });
 
-    clearCartBtn.addEventListener("click", () => {
-      if (!confirm("Clear the whole order?")) return;
-      cart = [];
-      saveCart();
-      renderCart();
-    });
+        activeLetter =
+          event.target.dataset.letter;
+
+
+        localStorage.setItem(
+          "afaLetter",
+          activeLetter
+        );
+
+
+        renderAll();
+
+      }
+    );
+
+
+    /*
+    ============================================================
+    SEARCH DEBOUNCE
+    ============================================================
+
+    Instead of rebuilding every card instantly
+    for every single keyboard event, wait briefly
+    until the visitor pauses typing.
+    ============================================================
+    */
+
+    let searchTimer = null;
+
+
+    searchInput.addEventListener(
+      "input",
+      () => {
+
+        activeLetter =
+          "All";
+
+
+        localStorage.setItem(
+          "afaSearch",
+          searchInput.value
+        );
+
+
+        localStorage.setItem(
+          "afaLetter",
+          activeLetter
+        );
+
+
+        clearTimeout(
+          searchTimer
+        );
+
+
+        searchTimer =
+          setTimeout(
+            () => {
+
+              renderAll();
+
+            },
+            180
+          );
+
+      }
+    );
+
+
+    /*
+    ============================================================
+    CLEAR FILTERS
+    ============================================================
+    */
+
+    clearFilters.addEventListener(
+      "click",
+      () => {
+
+        searchInput.value =
+          "";
+
+
+        activeLetter =
+          "All";
+
+
+        localStorage.removeItem(
+          "afaSearch"
+        );
+
+
+        localStorage.removeItem(
+          "afaLetter"
+        );
+
+
+        renderAll();
+
+      }
+    );
+
+
+    /*
+    ============================================================
+    CART CONTROLS
+    ============================================================
+    */
+
+    cartItems.addEventListener(
+      "click",
+      event => {
+
+        const button =
+          event.target.closest(
+            "button"
+          );
+
+
+        if (!button) {
+          return;
+        }
+
+
+        const index =
+          Number(
+            button.dataset.index
+          );
+
+
+        const action =
+          button.dataset.action;
+
+
+        if (
+          action === "plus"
+        ) {
+
+          updateQty(
+            index,
+            1
+          );
+
+        }
+
+
+        if (
+          action === "minus"
+        ) {
+
+          updateQty(
+            index,
+            -1
+          );
+
+        }
+
+
+        if (
+          action === "remove"
+        ) {
+
+          removeItem(
+            index
+          );
+
+        }
+
+      }
+    );
+
+
+    /*
+    ============================================================
+    CLEAR CART
+    ============================================================
+    */
+
+    clearCartBtn.addEventListener(
+      "click",
+      () => {
+
+        if (
+          !confirm(
+            "Clear the whole order?"
+          )
+        ) {
+
+          return;
+
+        }
+
+
+        cart = [];
+
+
+        saveCart();
+
+        renderCart();
+
+      }
+    );
+
+
+    /*
+    ============================================================
+    INITIAL PAGE LOAD
+    ============================================================
+    */
 
     renderAll();
+
   </script>
+
 </body>
 </html>
