@@ -872,13 +872,10 @@ const strains = {
       time: "70-80 days"
     },
     {
-      name: "Blueberry Milkshake",
-      SOLD OUT
-
-This strain is currently unavailable.
-
-Original genetics and artwork remain in our archive for reference and possible future releases.
-    },
+  name: "Blueberry Milkshake",
+  status: "SOLD OUT",
+  description: "This strain is currently unavailable. Original genetics and artwork remain in our archive for reference and possible future releases."
+},
     {
       name: "Berry's Breath",
       type: "Auto Fem",
