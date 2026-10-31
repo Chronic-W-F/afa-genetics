@@ -1287,7 +1287,7 @@ const strains = {
   ],  
   fall2026: [
     {
-      name: "Black on Black AFA",
+      name: "Black on Black",
       type: "Auto Fem",
       drop: "Fall 2026",
       lineage: "Black Domina × Black Beltz × Black Mamba",
