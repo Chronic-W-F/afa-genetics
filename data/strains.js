@@ -873,13 +873,11 @@ const strains = {
     },
     {
       name: "Blueberry Milkshake",
-      type: "Auto Fem",
-      lineage: "Blueberry Slushy x Cookies and Cream Auto x Super OG",
-      dominance: "Full Indica",
-      terpenes: "Myrcene, Limonene, Caryophyllene",
-      flavor: "Juicy blueberry, rich cream, skunky OG",
-      effects: "Smooth relaxing high, euphoric",
-      time: "70-80 days"
+      SOLD OUT
+
+This strain is currently unavailable.
+
+Original genetics and artwork remain in our archive for reference and possible future releases.
     },
     {
       name: "Berry's Breath",
