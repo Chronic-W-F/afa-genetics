@@ -156,7 +156,7 @@ const strainImages = {
   "Black on Black": "/images/black-on-black.jpeg",
   "Snow Beltz": "/images/snow-beltz.jpeg",
   "Oreo Magik": "/images/oreo-magik.jpeg",
-  "War-Path": "/images/war-path.jpeg",
+  "War Path": "/images/war-path.jpeg",
   "Dirty Money": "/images/dirty-money.jpeg",
   "Garlic Heist": "/images/garlic-heist.jpeg",
   "Galaxy Quest": "/images/galaxy-quest.jpeg",
