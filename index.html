@@ -142,6 +142,13 @@ h2{
   box-shadow:0 0 10px #39ff14;
 }
 .add-pack-btn:active{transform:scale(.98)}
+.add-pack-btn:disabled{
+  background:#39ff14;
+  color:#000;
+  opacity:1;
+  cursor:not-allowed;
+  box-shadow:0 0 10px #39ff14;
+}
 .cart-item{
   border-bottom:1px solid #145214;
   padding:14px 0;
@@ -480,6 +487,19 @@ const PACK_PRICES = {
 
 const SHIPPING = 10;
 
+/* SOLD OUT STRAINS */
+
+const SOLD_OUT_STRAINS = new Set([
+  "Blueberry Milkshake",
+  "Banana Pudding",
+  "Sour Kushberry",
+  "Candy Paint"
+]);
+
+function isSoldOut(name) {
+  return SOLD_OUT_STRAINS.has(name);
+}
+
 /* SAVED SETTINGS */
 
 const savedSearch =
@@ -500,6 +520,16 @@ try {
 } catch {
   cart = [];
 }
+
+/* REMOVE PREVIOUSLY SAVED SOLD-OUT ITEMS */
+
+cart = cart.filter(item =>
+  item &&
+  typeof item.name === "string" &&
+  !isSoldOut(item.name)
+);
+
+localStorage.setItem("afaCart",JSON.stringify(cart));
 
 searchInput.value = savedSearch;
 
@@ -607,6 +637,7 @@ function renderStrain(strain) {
   const image = getImagePath(strain);
   const safeName = escapeHtml(strain.name);
   const safeType = escapeHtml(strain.type || "Auto Fem");
+  const soldOut = isSoldOut(strain.name);
 
   return `
     <div class="strain-card">
@@ -651,8 +682,9 @@ function renderStrain(strain) {
             data-name="${safeName}"
             data-type="${safeType}"
             data-pack="3 Pack"
+            ${soldOut ? "disabled" : ""}
           >
-            Add 3 Pack — $25
+            ${soldOut ? "SOLD OUT" : "Add 3 Pack — $25"}
           </button>
 
           <button
@@ -661,8 +693,9 @@ function renderStrain(strain) {
             data-name="${safeName}"
             data-type="${safeType}"
             data-pack="5 Pack"
+            ${soldOut ? "disabled" : ""}
           >
-            Add 5 Pack — $30
+            ${soldOut ? "SOLD OUT" : "Add 5 Pack — $30"}
           </button>
 
           <button
@@ -671,8 +704,9 @@ function renderStrain(strain) {
             data-name="${safeName}"
             data-type="${safeType}"
             data-pack="10 Pack"
+            ${soldOut ? "disabled" : ""}
           >
-            Add 10 Pack — $50
+            ${soldOut ? "SOLD OUT" : "Add 10 Pack — $50"}
           </button>
         </div>
       </div>
@@ -723,6 +757,8 @@ function saveCart() {
 }
 
 function addToCart(name,type,pack) {
+  if (isSoldOut(name)) return;
+
   const existing = cart.find(item =>
     item.name === name && item.pack === pack
   );
@@ -970,6 +1006,8 @@ function bindCardClicks() {
   document.querySelectorAll(".add-pack-btn")
     .forEach(button => {
       button.addEventListener("click",() => {
+        if (button.disabled) return;
+
         addToCart(
           button.dataset.name,
           button.dataset.type,
