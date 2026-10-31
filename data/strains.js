@@ -1,3 +1,4 @@
+
 const strains = {
   autoFem: [
     {
@@ -200,25 +201,25 @@ const strains = {
       flavor: "Banana funk, sour diesel, creamy cookie haze"
     },
     {
-  name: "Grapefruit Sour D F3",
-  type: "Auto Fem",
-  lineage: "New York City Diesel x Sour Diesel x Grapefruit Auto",
-  dominance: "Indica leaning hybrid",
-  terpenes: "Limonene, Caryophyllene, Myrcene",
-  flavor: "Zesty citrus, pungent diesel, skunky earthy finish",
-  effects: "Uplifting yet relaxing high",
-  time: "60-70 days"
-},
+      name: "Grapefruit Sour D F3",
+      type: "Auto Fem",
+      lineage: "New York City Diesel x Sour Diesel x Grapefruit Auto",
+      dominance: "Indica leaning hybrid",
+      terpenes: "Limonene, Caryophyllene, Myrcene",
+      flavor: "Zesty citrus, pungent diesel, skunky earthy finish",
+      effects: "Uplifting yet relaxing high",
+      time: "60-70 days"
+    },
     {
-  name: "Black Cherry Sour D F3",
-  type: "Auto Fem",
-  lineage: "Sour Black Cherry Haze x Sour Diesel x New York City Diesel",
-  dominance: "Indica leaning hybrid",
-  terpenes: "Pinene, Phellandrene, Myrcene",
-  flavor: "Sweet cherry, sour diesel, complex earthy finish",
-  effects: "Uplifting yet relaxing high",
-  time: "75-80 days"
-},
+      name: "Black Cherry Sour D F3",
+      type: "Auto Fem",
+      lineage: "Sour Black Cherry Haze x Sour Diesel x New York City Diesel",
+      dominance: "Indica leaning hybrid",
+      terpenes: "Pinene, Phellandrene, Myrcene",
+      flavor: "Sweet cherry, sour diesel, complex earthy finish",
+      effects: "Uplifting yet relaxing high",
+      time: "75-80 days"
+    },
     {
       name: "Silent Nights",
       type: "Auto Fem",
@@ -824,6 +825,8 @@ const strains = {
     {
       name: "Banana Pudding",
       type: "Auto Fem",
+      status: "SOLD OUT",
+      description: "This strain is currently unavailable. Original genetics and artwork remain in our archive for reference and possible future releases.",
       lineage: "Vanilla Slushy x Banana Daddy x Banana Kush",
       dominance: "Full Indica",
       terpenes: "Myrcene, Caryophyllene, Limonene",
@@ -872,10 +875,11 @@ const strains = {
       time: "70-80 days"
     },
     {
-  name: "Blueberry Milkshake",
-  status: "SOLD OUT",
-  description: "This strain is currently unavailable. Original genetics and artwork remain in our archive for reference and possible future releases."
-},
+      name: "Blueberry Milkshake",
+      type: "Auto Fem",
+      status: "SOLD OUT",
+      description: "This strain is currently unavailable. Original genetics and artwork remain in our archive for reference and possible future releases."
+    },
     {
       name: "Berry's Breath",
       type: "Auto Fem",
@@ -1082,139 +1086,143 @@ const strains = {
       lineage: "Blackberry x Skunk x GMO8"
     },
     {
-  name: "Tropicana Cherry",
-  type: "Auto Fem",
-  drop: "June 2026",
-  image: "/images/tropicana-cherry.png",
-  lineage: "Tropicana Cookies x Tropicana Cherry x Tropicana Cookies",
-  thc: "29.8%",
-  terpenes: "Limonene, Caryophyllene, Myrcene",
-  flavor: "Bright tropical citrus, sweet cherry candy, warm cookie dough"
-},
-{
-  name: "Midnight Cherries",
-  type: "Auto Fem",
-  drop: "June 2026",
-  image: "/images/midnight-cherries.png",
-  lineage: "Cherry Cola R3 x Burgundy Cherry x Forgetful Cherries",
-  thc: "28.7%",
-  terpenes: "Limonene, Caryophyllene, Myrcene",
-  flavor: "Dark cherry cola, sweet berry candy, subtle earthy spice"
-},
-{
-  name: "Scrambled Chaos",
-  type: "Auto Fem",
-  drop: "June 2026",
-  image: "/images/scrambled-chaos.jpeg",
-  lineage: "Whiskey Zulu x Wave Runner x London Pound Cake",
-  thc: "30.4%",
-  terpenes: "Caryophyllene, Limonene, Myrcene",
-  flavor: "Sweet berry cake, citrus zest, creamy vanilla with earthy undertones"
-},
-{
-  name: "Code Breaker",
-  type: "Auto Fem",
-  drop: "June 2026",
-  image: "/images/code-breaker.jpeg",
-  lineage: "Headband x Tropicana Cookies x Animal Mints",
-  thc: "31.2%",
-  terpenes: "Caryophyllene, Limonene, Myrcene",
-  flavor: "Spicy mint, sweet citrus cookies, earthy diesel"
-},
-{
-  name: "Donut Cookies",
-  type: "Auto Fem",
-  drop: "June 2026",
-  image: "/images/donut-cookies.png",
-  lineage: "Jelly Donuts x Burgundy Cherry x Papaya Cookies",
-  thc: "29.1%",
-  terpenes: "Limonene, Caryophyllene, Myrcene",
-  flavor: "Sweet jelly donut, ripe cherry, tropical papaya with creamy cookie finish"
-},
-{
-  name: "Cherry Berry Blast",
-  type: "Auto Fem",
-  drop: "June 2026",
-  image: "/images/cherry-berry-blast.png",
-  lineage: "Midnight Cherries x OG Kush Mints x Cherry Cola R3",
-  thc: "30.8%",
-  terpenes: "Limonene, Caryophyllene, Myrcene",
-  flavor: "Explosive cherry, sweet berry, fizzy cola with minty kush undertones"
-},
-{
-  name: "Tropical Gorilla",
-  type: "Auto Fem",
-  drop: "June 2026",
-  image: "/images/tropical-gorilla.png",
-  lineage: "MGK Auto x Tropicana Cookies x Gorilla Kush",
-  thc: "32.1%",
-  terpenes: "Limonene, Caryophyllene, Myrcene",
-  flavor: "Sweet tropical pineapple, bright citrus, earthy gorilla funk"
-},
-{
-  name: "Apple Muffins",
-  type: "Auto Fem",
-  drop: "June 2026",
-  image: "/images/apple-muffins.jpeg",
-  lineage: "Blueberry Muffins × Apple Fritter × Sweet & Sour Apple",
-  terpenes: "Myrcene, Caryophyllene, Limonene, Pinene",
-  flavor: "Fresh baked apple muffin, tart green apple, creamy vanilla, warm cinnamon"
-},
-{
-  name: "Sour Kushberry",
-  type: "Auto Fem",
-  drop: "June 2026",
-  image: "/images/sour-kushberry.jpeg",
-  lineage: "Grape Walker Kush × Apple Fritter × Fukawi Sour",
-  terpenes: "Caryophyllene, Myrcene, Limonene",
-  flavor: "Sour grape candy, tart green apple, deep kush earth"
-},
-{
-  name: "Luscious Melon",
-  type: "Auto Fem",
-  drop: "June 2026",
-  image: "/images/luscious-melon.png",
-  lineage: "Sha Sha Sherb × Apple Muffins × Cantaloupe Kush",
-  terpenes: "Limonene, Myrcene, Linalool",
-  flavor: "Ripe cantaloupe, creamy sherbet, baked apple pastry"
-},
-{
-  name: "Candy Paint",
-  type: "Auto Fem",
-  drop: "June 2026",
-  image: "/images/candy-paint.jpeg",
-  lineage: "Sugar Rush × Sour Apple × Apple Muffins",
-  terpenes: "Limonene, Caryophyllene, Myrcene",
-  flavor: "Sweet candy shell, puckering sour apple, sugary muffin dough"
-},
-{
-  name: "Galactic Jelly",
-  type: "Auto Fem",
-  drop: "June 2026",
-  image: "/images/galactic-jelly.png",
-  lineage: "Moon Oreos × Apple Fritter × Jelly Donut",
-  terpenes: "Caryophyllene, Limonene, Humulene",
-  flavor: "Sweet jelly-filled donut, creamy cookies and cream, fried dough"
-},
-{
-  name: "The Schwartz",
-  type: "Auto Fem",
-  drop: "June 2026",
-  image: "/images/the-schwartz.png",
-  lineage: "Galaxy Brain × Apple Muffins × Brain Freeze",
-  terpenes: "Myrcene, Pinene, Limonene",
-  flavor: "Sweet baked apple, creamy muffin, icy fruit punch"
-},
-{
-  name: "Arabian Apples",
-  type: "Auto Fem",
-  drop: "June 2026",
-  image: "/images/arabian-apples.png",
-  lineage: "Arabian Nights × Sour Apple × Gorilla Kush",
-  thc: "29-30%",
-  terpenes: "Earthy cinnamon apple bran muffin with an Apple Jax twist",
-  flavor: "Tart green apple, exotic spices, deep earthy kush"
-},
+      name: "Tropicana Cherry",
+      type: "Auto Fem",
+      drop: "June 2026",
+      image: "/images/tropicana-cherry.png",
+      lineage: "Tropicana Cookies x Tropicana Cherry x Tropicana Cookies",
+      thc: "29.8%",
+      terpenes: "Limonene, Caryophyllene, Myrcene",
+      flavor: "Bright tropical citrus, sweet cherry candy, warm cookie dough"
+    },
+    {
+      name: "Midnight Cherries",
+      type: "Auto Fem",
+      drop: "June 2026",
+      image: "/images/midnight-cherries.png",
+      lineage: "Cherry Cola R3 x Burgundy Cherry x Forgetful Cherries",
+      thc: "28.7%",
+      terpenes: "Limonene, Caryophyllene, Myrcene",
+      flavor: "Dark cherry cola, sweet berry candy, subtle earthy spice"
+    },
+    {
+      name: "Scrambled Chaos",
+      type: "Auto Fem",
+      drop: "June 2026",
+      image: "/images/scrambled-chaos.jpeg",
+      lineage: "Whiskey Zulu x Wave Runner x London Pound Cake",
+      thc: "30.4%",
+      terpenes: "Caryophyllene, Limonene, Myrcene",
+      flavor: "Sweet berry cake, citrus zest, creamy vanilla with earthy undertones"
+    },
+    {
+      name: "Code Breaker",
+      type: "Auto Fem",
+      drop: "June 2026",
+      image: "/images/code-breaker.jpeg",
+      lineage: "Headband x Tropicana Cookies x Animal Mints",
+      thc: "31.2%",
+      terpenes: "Caryophyllene, Limonene, Myrcene",
+      flavor: "Spicy mint, sweet citrus cookies, earthy diesel"
+    },
+    {
+      name: "Donut Cookies",
+      type: "Auto Fem",
+      drop: "June 2026",
+      image: "/images/donut-cookies.png",
+      lineage: "Jelly Donuts x Burgundy Cherry x Papaya Cookies",
+      thc: "29.1%",
+      terpenes: "Limonene, Caryophyllene, Myrcene",
+      flavor: "Sweet jelly donut, ripe cherry, tropical papaya with creamy cookie finish"
+    },
+    {
+      name: "Cherry Berry Blast",
+      type: "Auto Fem",
+      drop: "June 2026",
+      image: "/images/cherry-berry-blast.png",
+      lineage: "Midnight Cherries x OG Kush Mints x Cherry Cola R3",
+      thc: "30.8%",
+      terpenes: "Limonene, Caryophyllene, Myrcene",
+      flavor: "Explosive cherry, sweet berry, fizzy cola with minty kush undertones"
+    },
+    {
+      name: "Tropical Gorilla",
+      type: "Auto Fem",
+      drop: "June 2026",
+      image: "/images/tropical-gorilla.png",
+      lineage: "MGK Auto x Tropicana Cookies x Gorilla Kush",
+      thc: "32.1%",
+      terpenes: "Limonene, Caryophyllene, Myrcene",
+      flavor: "Sweet tropical pineapple, bright citrus, earthy gorilla funk"
+    },
+    {
+      name: "Apple Muffins",
+      type: "Auto Fem",
+      drop: "June 2026",
+      image: "/images/apple-muffins.jpeg",
+      lineage: "Blueberry Muffins × Apple Fritter × Sweet & Sour Apple",
+      terpenes: "Myrcene, Caryophyllene, Limonene, Pinene",
+      flavor: "Fresh baked apple muffin, tart green apple, creamy vanilla, warm cinnamon"
+    },
+    {
+      name: "Sour Kushberry",
+      type: "Auto Fem",
+      status: "SOLD OUT",
+      description: "This strain is currently unavailable. Original genetics and artwork remain in our archive for reference and possible future releases.",
+      drop: "June 2026",
+      image: "/images/sour-kushberry.jpeg",
+      lineage: "Grape Walker Kush × Apple Fritter × Fukawi Sour",
+      terpenes: "Caryophyllene, Myrcene, Limonene",
+      flavor: "Sour grape candy, tart green apple, deep kush earth"
+    },
+    {
+      name: "Luscious Melon",
+      type: "Auto Fem",
+      drop: "June 2026",
+      image: "/images/luscious-melon.png",
+      lineage: "Sha Sha Sherb × Apple Muffins × Cantaloupe Kush",
+      terpenes: "Limonene, Myrcene, Linalool",
+      flavor: "Ripe cantaloupe, creamy sherbet, baked apple pastry"
+    },
+    {
+      name: "Candy Paint",
+      type: "Auto Fem",
+      status: "SOLD OUT",
+      description: "This strain is currently unavailable. Original genetics and artwork remain in our archive for reference and possible future releases.",
+      drop: "June 2026",
+      image: "/images/candy-paint.jpeg",
+      lineage: "Sugar Rush × Sour Apple × Apple Muffins",
+      terpenes: "Limonene, Caryophyllene, Myrcene",
+      flavor: "Sweet candy shell, puckering sour apple, sugary muffin dough"
+    },
+    {
+      name: "Galactic Jelly",
+      type: "Auto Fem",
+      drop: "June 2026",
+      image: "/images/galactic-jelly.png",
+      lineage: "Moon Oreos × Apple Fritter × Jelly Donut",
+      terpenes: "Caryophyllene, Limonene, Humulene",
+      flavor: "Sweet jelly-filled donut, creamy cookies and cream, fried dough"
+    },
+    {
+      name: "The Schwartz",
+      type: "Auto Fem",
+      drop: "June 2026",
+      image: "/images/the-schwartz.png",
+      lineage: "Galaxy Brain × Apple Muffins × Brain Freeze",
+      terpenes: "Myrcene, Pinene, Limonene",
+      flavor: "Sweet baked apple, creamy muffin, icy fruit punch"
+    },
+    {
+      name: "Arabian Apples",
+      type: "Auto Fem",
+      drop: "June 2026",
+      image: "/images/arabian-apples.png",
+      lineage: "Arabian Nights × Sour Apple × Gorilla Kush",
+      thc: "29-30%",
+      terpenes: "Earthy cinnamon apple bran muffin with an Apple Jax twist",
+      flavor: "Tart green apple, exotic spices, deep earthy kush"
+    }
   ],
 
   fastFlower: [
@@ -1246,40 +1254,41 @@ const strains = {
       flavor: "Skunk, garlic, kush",
       time: "5.5-7 weeks"
     },
-  {
-  name: "Lion Fuel",
-  type: "Fast Flower",
-  drop: "June 2026",
-  image: "/images/lion-fuel.jpeg",
-  lineage: "Tropicana Cherry Auto x Nine Lions",
-  terpenes: "Berry Gas Diesel Menthol",
-  flavor: "Sweet berry tart, cherry cola, thick diesel gas, peppery spice, icy menthol-diesel",
-  description: "Lion Fuel is a straight-up badass. Loud, gassy, berry-sweet with that signature menthol-diesel kick.",
-  time: "Fast Flower"
-},
-{
-  name: "Frozen Fury",
-  type: "Fast Flower",
-  drop: "June 2026",
-  image: "/images/frozen-fury.jpeg",
-  lineage: "Frozen Bag #19 F2 x Gorilla Glue #4",
-  terpenes: "Lime Gas Frosted Diesel",
-  flavor: "Bright lime zest, sweet candy, thick gassy diesel, peppery spice, earthy frost",
-  description: "Frozen Fury is a straight beast — loud lime gas with serious frost and glue power.",
-  time: "Fast Flower"
-},
-{
-  name: "Phantom Eclipse",
-  type: "Fast Flower",
-  drop: "June 2026",
-  image: "/images/phantom-eclipse.jpeg",
-  lineage: "Gary Payton x Fish Scale x Grandpa's Stash #10 x OG Kush Mintz Auto",
-  terpenes: "Orange Citrus Burnt Rubber Funk",
-  flavor: "Sweet orange candy, citrus peel, burnt rubber, spicy gas, funky orange diesel",
-  description: "Phantom Eclipse is a straight menace — dark, loud, and powerful.",
-  time: "Fast Flower"
-},
-  ],  
+    {
+      name: "Lion Fuel",
+      type: "Fast Flower",
+      drop: "June 2026",
+      image: "/images/lion-fuel.jpeg",
+      lineage: "Tropicana Cherry Auto x Nine Lions",
+      terpenes: "Berry Gas Diesel Menthol",
+      flavor: "Sweet berry tart, cherry cola, thick diesel gas, peppery spice, icy menthol-diesel",
+      description: "Lion Fuel is a straight-up badass. Loud, gassy, berry-sweet with that signature menthol-diesel kick.",
+      time: "Fast Flower"
+    },
+    {
+      name: "Frozen Fury",
+      type: "Fast Flower",
+      drop: "June 2026",
+      image: "/images/frozen-fury.jpeg",
+      lineage: "Frozen Bag #19 F2 x Gorilla Glue #4",
+      terpenes: "Lime Gas Frosted Diesel",
+      flavor: "Bright lime zest, sweet candy, thick gassy diesel, peppery spice, earthy frost",
+      description: "Frozen Fury is a straight beast — loud lime gas with serious frost and glue power.",
+      time: "Fast Flower"
+    },
+    {
+      name: "Phantom Eclipse",
+      type: "Fast Flower",
+      drop: "June 2026",
+      image: "/images/phantom-eclipse.jpeg",
+      lineage: "Gary Payton x Fish Scale x Grandpa's Stash #10 x OG Kush Mintz Auto",
+      terpenes: "Orange Citrus Burnt Rubber Funk",
+      flavor: "Sweet orange candy, citrus peel, burnt rubber, spicy gas, funky orange diesel",
+      description: "Phantom Eclipse is a straight menace — dark, loud, and powerful.",
+      time: "Fast Flower"
+    }
+  ],
+
   fall2026: [
     {
       name: "Black on Black",
@@ -1446,7 +1455,7 @@ const strains = {
       terpenes: "Myrcene, Caryophyllene, Limonene",
       flavor: "Sweet Vanilla, Caramel, Earthy Kush, Lemon Citrus, Pine, Diesel"
     }
-  ],
+  ]
 };
 
 export default strains;
