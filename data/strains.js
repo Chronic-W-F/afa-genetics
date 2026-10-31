@@ -1432,7 +1432,7 @@ const strains = {
       name: "Trend Setter",
       type: "Auto Fem",
       drop: "Fall 2026",
-      lineage: "Blue Dream × Lime Margarita",
+      lineage: "Skunky Chicken × GG4 Sherb × Blue Dream × Lime Margarita",
       thc: "28-33%+",
       dominance: "Hybrid",
       time: "80-85 days indoors",
