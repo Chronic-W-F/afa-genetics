@@ -153,22 +153,22 @@ const strainImages = {
   
   // FALL 2026 DROP — AUTO FEMS
 
-  "Black on Black AFA": "/images/black-on-black-afa.jpg",
-  "Snow Beltz": "/images/snow-beltz.jpg",
-  "Oreo Magik": "/images/oreo-magik.jpg",
-  "War-Path": "/images/war-path.jpg",
-  "Dirty Money": "/images/dirty-money.jpg",
-  "Garlic Heist": "/images/garlic-heist.jpg",
-  "Galaxy Quest": "/images/galaxy-quest.jpg",
-  "Midnight Snack": "/images/midnight-snack.jpg",
-  "Purple Space Beltz": "/images/purple-space-beltz.jpg",
-  "Kush Valley": "/images/kush-valley.jpg",
-  "San Fernando Valley OG Auto": "/images/san-fernando-valley-og-auto.jpg",
-  "San Fernando Magik": "/images/san-fernando-magik.jpg",
-  "Gorilla Warfare": "/images/gorilla-warfare.jpg",
-  "Skunky Chicken F3": "/images/skunky-chicken-f3.jpg",
-  "Trend Setter": "/images/trend-setter.jpg",
-  "Dirty Deeds": "/images/dirty-deeds.jpg"
+  "Black on Black": "/images/black-on-black.jpeg",
+  "Snow Beltz": "/images/snow-beltz.jpeg",
+  "Oreo Magik": "/images/oreo-magik.jpeg",
+  "War-Path": "/images/war-path.jpeg",
+  "Dirty Money": "/images/dirty-money.jpeg",
+  "Garlic Heist": "/images/garlic-heist.jpeg",
+  "Galaxy Quest": "/images/galaxy-quest.jpeg",
+  "Midnight Snack": "/images/midnight-snack.jpeg",
+  "Purple Space Beltz": "/images/purple-space-beltz.jpeg",
+  "Kush Valley": "/images/kush-valley.jpeg",
+  "San Fernando Valley OG Auto": "/images/san-fernando-valley-og-auto.jpeg",
+  "San Fernando Magik": "/images/san-fernando-magik.jpeg",
+  "Gorilla Warfare": "/images/gorilla-warfare.jpeg",
+  "Skunky Chicken F3": "/images/skunky-chicken-f3.jpeg",
+  "Trend Setter": "/images/trend-setter.jpeg",
+  "Dirty Deeds": "/images/dirty-deeds.jpeg"
 
 };
 
