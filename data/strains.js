@@ -1284,7 +1284,174 @@ const strains = {
   description: "Phantom Eclipse is a straight menace — dark, loud, and powerful.",
   time: "Fast Flower"
 },
-  ]
+  ],  
+  fall2026: [
+    {
+      name: "Black on Black AFA",
+      type: "Auto Fem",
+      drop: "Fall 2026",
+      lineage: "Black Domina × Black Beltz × Black Mamba",
+      thc: "28%+",
+      dominance: "Indica Dominant",
+      terpenes: "Myrcene, Caryophyllene, Limonene, Linalool"
+    },
+    {
+      name: "Snow Beltz",
+      type: "Auto Fem",
+      drop: "Fall 2026",
+      lineage: "White Rhino × Ice Catcher × Purple Space Beltz",
+      thc: "30%+",
+      dominance: "Indica Dominant",
+      terpenes: "Myrcene, Caryophyllene, Limonene, Pinene"
+    },
+    {
+      name: "Oreo Magik",
+      type: "Auto Fem",
+      drop: "Fall 2026",
+      lineage: "Oreoz × Black Beltz × San Fernando Magik",
+      thc: "29%+",
+      dominance: "Indica Dominant",
+      terpenes: "Myrcene, Caryophyllene, Limonene, Linalool",
+      flavor: "Cookie, Cream, Chocolate, Earthy"
+    },
+    {
+      name: "War Path",
+      type: "Auto Fem",
+      drop: "Fall 2026",
+      lineage: "Black Beltz × Blue Dream × Lime Margarita × Top Gun",
+      thc: "29-33%",
+      time: "75-85 days",
+      terpenes: "Caryophyllene, Limonene, Myrcene",
+      flavor: "Lime-Candy, Berry, Diesel-Gas"
+    },
+    {
+      name: "Dirty Money",
+      type: "Auto Fem",
+      drop: "Fall 2026",
+      lineage: "Money Maker × Dirty Spice × Permanent Marker",
+      thc: "Over 28%",
+      dominance: "Indica-leaning Hybrid",
+      time: "75-85 days",
+      terpenes: "Myrcene, Caryophyllene, Limonene, Humulene",
+      flavor: "Gas, Fuel, Sweet Earth, Spice, Chemical"
+    },
+    {
+      name: "Garlic Heist",
+      type: "Auto Fem",
+      drop: "Fall 2026",
+      lineage: "GMO 8 × Dirty Money × Show Me Garlic",
+      thc: "30%+",
+      terpenes: "Myrcene, Caryophyllene, Limonene, Linalool, Humulene",
+      flavor: "Garlic, Fuel, Citrus, Earth, Spice"
+    },
+    {
+      name: "Galaxy Quest",
+      type: "Auto Fem",
+      drop: "Fall 2026",
+      lineage: "The Schwartz × Purple Space Beltz × Black Beltz",
+      thc: "29-32%",
+      time: "8-9 weeks",
+      terpenes: "Caryophyllene, Limonene, Myrcene, Linalool",
+      flavor: "Sweet candy grape, citrus zest, tropical fruit, light diesel"
+    },
+    {
+      name: "Midnight Snack",
+      type: "Auto Fem",
+      drop: "Fall 2026",
+      lineage: "Skunky Chicken × Gorilla Z × Sherb Cookies",
+      thc: "26-32%",
+      time: "70-80 days",
+      terpenes: "Caryophyllene, Myrcene, Limonene",
+      flavor: "Skunky, Tropical Candy, Creamy Berry, Gas"
+    },
+    {
+      name: "Purple Space Beltz",
+      type: "Auto Fem",
+      drop: "Fall 2026",
+      lineage: "Purple Kush × Black Beltz × SFV OG Kush",
+      thc: "29%+",
+      dominance: "Indica Dominant",
+      time: "~80 days indoors",
+      flavor: "Grape Candy, Tropical Zest, Pine Diesel, Earthy Hash"
+    },
+    {
+      name: "Kush Valley",
+      type: "Auto Fem",
+      drop: "Fall 2026",
+      lineage: "GG4 × GG5 × Gorilla Z × SFV OG Kush",
+      thc: "30%+",
+      dominance: "Indica Dominant",
+      time: "75-85 days indoors",
+      flavor: "Diesel Gas, Tropical Candy, Pine, Chocolate Earth, Lemon Fuel"
+    },
+    {
+      name: "San Fernando Valley OG Auto",
+      type: "Auto Fem",
+      drop: "Fall 2026",
+      lineage: "San Fernando Valley OG (Auto)",
+      thc: "30%+ (breeder-reported)",
+      dominance: "Indica Dominant",
+      time: "75-85 days",
+      terpenes: "Myrcene, Limonene, Caryophyllene, Pinene, Linalool",
+      flavor: "Pine, Citrus, Earthy Fuel, Spicy, Sweet Vanilla"
+    },
+    {
+      name: "San Fernando Magik",
+      type: "Auto Fem",
+      drop: "Fall 2026",
+      lineage: "Orlando Magik × San Fernando Valley OG",
+      thc: "32%+ (breeder-reported)",
+      dominance: "Indica Dominant",
+      time: "80-85 days",
+      terpenes: "Myrcene, Limonene, Caryophyllene, Linalool, Pinene",
+      flavor: "Citrus, Earthy Pine, Sweet Floral, Spicy Herbal, Creamy Gas"
+    },
+    {
+      name: "Gorilla Warfare",
+      type: "Auto Fem",
+      drop: "Fall 2026",
+      lineage: "Monkey Business × San Fernando Valley OG × Gorilla Kush",
+      thc: "32%+ (breeder-reported)",
+      dominance: "Indica Dominant",
+      time: "75-85 days",
+      terpenes: "Myrcene, Limonene, Caryophyllene, Pinene, Linalool",
+      flavor: "Earthy, Pine, Citrus, Spicy, Sweet, Diesel"
+    },
+    {
+      name: "Skunky Chicken F3",
+      type: "Auto Fem",
+      drop: "Fall 2026",
+      lineage: "Skunky Chicken F3 (Stabilized Genetics)",
+      thc: "Over 30%",
+      dominance: "Indica-leaning Hybrid",
+      time: "75-85 days",
+      terpenes: "Myrcene, Caryophyllene, Limonene, Pinene",
+      flavor: "Skunk, Earthy, Diesel, Citrus-Pine, Funky"
+    },
+    {
+      name: "Trend Setter",
+      type: "Auto Fem",
+      drop: "Fall 2026",
+      lineage: "Blue Dream × Lime Margarita",
+      thc: "28-33%+",
+      dominance: "Hybrid",
+      time: "80-85 days indoors",
+      terpenes: "Myrcene, Caryophyllene, Limonene, Linalool, Pinene",
+      flavor: "Skunk, Diesel, Sweet Cream, Blueberry, Lime Citrus",
+      description: "AFA Genetics × Growlahoma Collaboration"
+    },
+    {
+      name: "Dirty Deeds",
+      type: "Auto Fem",
+      drop: "Fall 2026",
+      lineage: "Mendo Breath × Dirty Money × San Fernando Valley OG",
+      thc: "29%+ (potential)",
+      dominance: "Indica-Dominant Hybrid (estimated)",
+      time: "75-85 days indoors",
+      terpenes: "Myrcene, Caryophyllene, Limonene",
+      flavor: "Sweet Vanilla, Caramel, Earthy Kush, Lemon Citrus, Pine, Diesel"
+    }
+  ],
 };
 
 export default strains;
