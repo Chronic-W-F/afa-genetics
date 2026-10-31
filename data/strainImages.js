@@ -149,7 +149,27 @@ const strainImages = {
 
   "Lion Fuel": "/images/lion-fuel.jpeg",
   "Frozen Fury": "/images/frozen-fury.jpeg",
-  "Phantom Eclipse": "/images/phantom-eclipse.jpeg"
+  "Phantom Eclipse": "/images/phantom-eclipse.jpeg",
+  
+  // FALL 2026 DROP — AUTO FEMS
+
+  "Black on Black AFA": "/images/black-on-black-afa.jpg",
+  "Snow Beltz": "/images/snow-beltz.jpg",
+  "Oreo Magik": "/images/oreo-magik.jpg",
+  "War-Path": "/images/war-path.jpg",
+  "Dirty Money": "/images/dirty-money.jpg",
+  "Garlic Heist": "/images/garlic-heist.jpg",
+  "Galaxy Quest": "/images/galaxy-quest.jpg",
+  "Midnight Snack": "/images/midnight-snack.jpg",
+  "Purple Space Beltz": "/images/purple-space-beltz.jpg",
+  "Kush Valley": "/images/kush-valley.jpg",
+  "San Fernando Valley OG Auto": "/images/san-fernando-valley-og-auto.jpg",
+  "San Fernando Magik": "/images/san-fernando-magik.jpg",
+  "Gorilla Warfare": "/images/gorilla-warfare.jpg",
+  "Skunky Chicken F3": "/images/skunky-chicken-f3.jpg",
+  "Trend Setter": "/images/trend-setter.jpg",
+  "Dirty Deeds": "/images/dirty-deeds.jpg"
+
 };
 
 export default strainImages;
