@@ -108,7 +108,7 @@ const strainImages = {
   "Monkey Bash": "/images/monkey-bash.png",
   "Blueberry Milkshake": "/images/blueberry-milkshake.jpeg",
   "Cookie Dough": "/images/cookie-dough.jpeg",
-  "Watermelon Donkey Deez": "/images/watermelon-donkey-deez.jpeg",
+  "Watermelon Donkey Deez": "/images/watermelon-donkey-deez.png",
   "Cosmic Crunch": "/images/cosmic-crunch.png",
   "Biscotti Crunch": "/images/biscotti-crunch.png",
   "Frosted Terps F3": "/images/frosted-terps-f3.png",
